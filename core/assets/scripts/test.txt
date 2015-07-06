@@ -1,0 +1,8 @@
+mas                 "I'm really exited to be here right now!"
+mas "are you really excited to be here right now?"
+if "int x = 5; return (x==5)"
+    cha "no fuck off mason!~"
+    **testing
+mas "are you fucking kidding me cunt i'll fuckign rekt ur face off"
+    b( "imagestesting.png" ,racism, 104 , 104, 12312, 123, 123, 123, asddasd, 2opfjd,asd as,d)
+mas "don't worry guys I saved this script file"
