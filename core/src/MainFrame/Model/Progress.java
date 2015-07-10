@@ -1,13 +1,14 @@
 package MainFrame.Model;
 
 import java.util.ArrayList;
+import java.util.NoSuchElementException;
 
 public class Progress {
 
 	// Note to self: Do not become a lender.
 
-	public static ArrayList<Progresses> progress = new ArrayList<Progresses>();
-	public static ArrayList<Point> points = new ArrayList<Point>();
+	public static ArrayList<Progresses> progress = new ArrayList<>();
+	public static ArrayList<Point> points = new ArrayList<>();
 
 	public void loadFromSave() {
 
@@ -17,6 +18,28 @@ public class Progress {
 		progress.clear();
 		progress.add(new Progresses("test", false));
 	}
+
+    public Progresses getProgress(String name){
+        try {
+            return progress.stream().filter(s -> s.getName().contentEquals(name)).findFirst().get();
+        } catch (NoSuchElementException e){
+            //there was no progress so we'll create it and set it to false
+            add(name, false);
+            //then we'll just use a little bit of recursion to return that newly created progress.
+            return getProgress(name);
+        }
+    }
+
+    public Point getPoint(String name){
+        try {
+            return points.stream().filter(s -> s.getName().contentEquals(name)).findFirst().get();
+        } catch (NoSuchElementException e){
+            //there was no progress so we'll create it and set it to 0
+            points.add(new Point(name, 0));
+            //then we'll just use a little bit of recursion to return that newly created progress.
+            return getPoint(name);
+        }
+    }
 
 	public void add(String name, boolean bool) {
 		progress.add(new Progresses(name, bool));

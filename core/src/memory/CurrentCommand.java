@@ -6,6 +6,7 @@ import java.util.Observable;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import MainFrame.Model.Progress;
 import MainFrame.Model.console;
 import groovy.lang.Binding;
 import groovy.lang.GroovyCodeSource;
@@ -22,6 +23,7 @@ public class CurrentCommand extends Observable {
   private ArrayList<Name> names;
   private ArrayList<String> params;
   private ArrayList<Integer> locs;
+    private Progress progress;
   @SuppressWarnings("rawtypes")
   private ArrayList empty = new ArrayList();
 
@@ -54,23 +56,30 @@ public class CurrentCommand extends Observable {
       if (this.com != Command.IF)
           return 0;
 
-    Binding binding = new Binding();
-    GroovyShell shell = new GroovyShell(binding);
+      if (this.getText().contains("=")) {
 
-    for (String test : this.getText()) {
-        test = test.substring(1,test.length() -1);
+          Binding binding = new Binding();
+          GroovyShell shell = new GroovyShell(binding);
 
-        Object value2 = shell.evaluate(test);
+          for (String test : this.getText()) {
+              test = test.substring(1, test.length() - 1);
 
-        try {
-            if (!(boolean) value2)
-                return 0;
-        } catch(Exception e) {
-            return 0;
-        }
-    }
+              Object value2 = shell.evaluate(test);
 
-    return 1;
+              try {
+                  if (!(boolean) value2)
+                      return 0;
+              } catch (Exception e) {
+                  return 0;
+              }
+          }
+          return 1;
+      }
+      //checks all the possible variables.
+      if (this.getText().stream().allMatch(s -> progress.getProgress(s).isDone()))
+          return 1;
+
+      return 0;
   }
 
   public Command getCom() {
