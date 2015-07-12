@@ -41,7 +41,6 @@ public class Card {
             // this.loadNextCard(expando);
 
 
-
         }
 
     }
@@ -212,11 +211,13 @@ public class Card {
                 return Command.MUSIC;
             case 'f':
                 return Command.SOUND_EFFECT;
+            case 'v':
+                return Command.VARIABLE;
+            case 'w':
+                return Command.WAIT;
 
         }
-
         return null;
-
     }
 
     private ArrayList<String> text() {
@@ -293,5 +294,4 @@ public class Card {
 
         return CurrentCommand.getInstance().getCom() == Command.SAY;
     }
-
 }

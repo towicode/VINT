@@ -2,11 +2,12 @@ package text;
 
 public enum Name {
 
-  
-  TODD,
-  TESTING,
-  MAS,
-  CHA,
-  
-  
+
+    TODD,
+    TESTING,
+    MAS,
+    CHA,
+    JAD,
+
+
 }

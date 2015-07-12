@@ -79,8 +79,10 @@ public class MainFrame extends ApplicationAdapter implements Observer {
 
     //System.out.println(CurrentCommand.getInstance().getCom());
 
-    CurrentCommand.getInstance().getText().stream()
-        .forEach(p -> console.log(p));
+
+    Handler.handle();
+/*    CurrentCommand.getInstance().getText().stream()
+        .forEach(p -> console.log(p));*/
 
 /*
     CurrentCommand.getInstance().getNames().stream()

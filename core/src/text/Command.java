@@ -13,7 +13,8 @@ public enum Command {
   BACKGROUND,
   WAIT,
   MUSIC,
-  SOUND_EFFECT
+  SOUND_EFFECT,
+  VARIABLE,
   
   
  

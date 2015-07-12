@@ -35,7 +35,7 @@ public class Spreader {
       if (line.isEmpty())
         continue;
 
-      if (line.contains("*"))
+      if (line.contains("#"))
         continue;
 
       cards.add(new Card(line, lineNum, filename));
