@@ -28,14 +28,13 @@ public class Expando {
       return;
 
     currentCard = cards.getFirst();
-    currentCard.setExpando(this);
     currentCard.send();
   }
 
   public boolean next() {
 
-    if (currentCard.advance()) {
-      currentCard = currentCard.NextCard;
+    if (currentCard.canAdvance()) {
+      currentCard = currentCard.nextCard;
       while (!currentCard.send()) {
 
         return next();
@@ -48,8 +47,8 @@ public class Expando {
 
   public boolean previous() {
 
-    if (currentCard.devance()) {
-      currentCard = currentCard.PreviousCard;
+    if (currentCard.canDeadvance()) {
+      currentCard = currentCard.previousCard;
       return true;
     }
     return false;

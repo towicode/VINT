@@ -8,9 +8,7 @@ import javax.swing.event.ChangeListener;
 
 import MainFrame.Model.Progress;
 import MainFrame.Model.console;
-import groovy.lang.Binding;
-import groovy.lang.GroovyCodeSource;
-import groovy.lang.GroovyShell;
+
 import text.Command;
 import text.Name;
 
