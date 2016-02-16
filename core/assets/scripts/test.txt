@@ -1,32 +1,28 @@
-b(winter_evans_home_base)
+b(bedroom_day,show)
 #BG of evans' winter home
 
-m("/music/snowtime_hell.mp3")
 #able to play sound with relative path without being declared
 
-#snowfall_critters = "/sounds/snowfall_critters"
 #play sound snowfall_critters
 #able to play sound after declaration
 ## This is pointless, we will have shortnames for songs anyways
 ## for example
-m(snowtime_hell)
+m(gb_relaxing)
 
 # load a image object and assign it a name
 # in this case i name her j for short typing.
-l(j, jade_winter_happy)
-a(j, disolve_in,700,350)
-#fades in jade in heavy winter gear
+c(jad, jade_spring_thinking_smile, show)
 
 jad "audio"
 mas "visual"
 #dialogue
 
-a(j, hide)
+c(jad, hide)
 #remove jade for later scene change
 
 mas "dialogue"
 
-b(zoom, 1.25,75)
+#b(zoom, 1.25,75)
 #zoom in on BG to give appearance of approaching it
 
 w(1)

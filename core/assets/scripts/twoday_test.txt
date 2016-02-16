@@ -1,0 +1,30 @@
+#show bedroom
+b(bedroom_day,show)
+
+#play relaxing music
+m(gb_relaxing)
+
+#show jade
+c(jad, jade_spring_thinking_smile, show)
+
+
+#dialog
+jad "audio"
+mas "visual"
+jad "I am jade, also known as a strip of bacon."
+
+
+#hide jade
+c(jad, hide)
+
+b()
+#black screen
+
+# create a variable happy and set it to true.
+v(happy, true)
+# create a variable test and set it to 5
+v(test, 5)
+if ("test = 0")
+    mas "test was 0"
+if "happy"
+	mas "Test was 5"

@@ -12,8 +12,6 @@ public class Card {
     private int indentLevel;
 
 
-    private String r_text; // removed text
-
     // for the link list card instructor
 
     /**
@@ -113,7 +111,12 @@ public class Card {
         }
 
         Claim claim = new Claim(this.text);
-        claim.send();
+        try {
+            claim.send();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return true;
+        }
         claim.printToLine(); //TODO : This is only for debug
         //reset the allowed level, so if an if statement ends we don't grab the next indent.
         MainFrame.getScript().allowedLevel = this.indentLevel;
@@ -122,6 +125,4 @@ public class Card {
 
         return claim.requiresInput();
     }
-
-
 }

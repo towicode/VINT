@@ -45,13 +45,9 @@ public class MainFrame extends ApplicationAdapter implements Observer {
 
         Spreader loader = new Spreader(null);
 
-
-        try {
-            script = loader.CreateExpando();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        script = loader.CreateExpando("blank");
+        script.currentCard.send();
+        script.next();
 
         batch = new SpriteBatch();
         font = new BitmapFont();

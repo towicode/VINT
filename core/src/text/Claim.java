@@ -4,10 +4,8 @@ import MainFrame.game.Console;
 import memory.CurrentCommand;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * Created by Todd on 2/15/2016.
@@ -15,7 +13,6 @@ import java.util.stream.Collectors;
 public class Claim {
 
     private Command command;
-    private ArrayList<String> P_text;
     private ArrayList<Name> names;
     private ArrayList<String> paramaters;
     private ArrayList<Integer> numbers;
@@ -24,228 +21,221 @@ public class Claim {
     //raw text
     private String r_text;
 
+    //removed quote text
+    private String rq_text;
 
-    public Claim(String line){
+    //used text
+    private String text;
+
+
+    public Claim(String line) {
         this.r_text = line;
         this.names = new ArrayList<>();
         this.dialog = new ArrayList<>();
         this.paramaters = new ArrayList<>();
-        this.numbers = new ArrayList<>()
+        this.numbers = new ArrayList<>();
 
     }
 
 
-    public void send() {
-        skipWhiteSpace ();
-        removeQuoteText ();
-        //whoops
-        parseNames ();
-        this.command = parseCommand ();
-        parseText ();
-        parseParameters ();
-        parseNumbers ();
-        CurrentCommand.getInstance().setCommand(command, P_text, names, params, locs);
+    public void send() throws Exception {
+        skipWhiteSpace();
+        removeQuoteText();
+        parseNames();
+        this.command = parseCommand();
+        parseText();
+        parseParameters();
+        parseNumbers();
+        CurrentCommand.getInstance().setCommand(command, dialog, names, paramaters, numbers);
 
     }
 
-    public void printToLine ()
-    {
+    public void printToLine() {
+        Console.WriteLine("__________________");
         Console.WriteLine("Raw Text: " + this.r_text);
         Console.WriteLine("text: " + this.text);
-        Console.WriteLine ("RQ Text: " + this.rq_text);
-        Console.WriteLine ("Command: " + this.command);
+        Console.WriteLine("RQ Text: " + this.rq_text);
+        Console.WriteLine("Command: " + this.command);
         if (names == null)
             return;
-        Console.WriteLine ("names: ");
-        for(Name x : names) {
-        Console.WriteLine ("    " + x);
-    }
+        Console.WriteLine("names: ");
+        for (Name x : names) {
+            Console.WriteLine("    " + x);
+        }
         if (dialog == null)
             return;
-        Console.WriteLine ("dialog(s): ");
+        Console.WriteLine("dialog(s): ");
         for (String x : dialog) {
-        Console.WriteLine ("    " + x);
-    }
+            Console.WriteLine("    " + x);
+        }
         if (paramaters == null)
             return;
         Console.WriteLine("paramaters: ");
         for (String x : paramaters) {
-        Console.WriteLine ("    " + x);
-    }
+            Console.WriteLine("    " + x);
+        }
         if (numbers == null)
             return;
         Console.WriteLine("numbers: ");
         for (int x : numbers) {
-        Console.WriteLine ("    " + x);
-    }
-    }
-
-    public Boolean requiresInput ()
-    {
-        return this.command == Command.GENERIC_SAY || this.command == Command.CHOICE || this.command == Command.SAY;
-    }
-
-    private ArrayList<String> matchRegex(String re, boolean remove_text) {
-
-        if (r_text == null) {
-            r_text = this.text.replaceAll("([\"\'])(?:(?=(\\\\?))\\2.)*?\\1", "");
+            Console.WriteLine("    " + x);
         }
-
-        Pattern pattern = Pattern.compile(re, Pattern.CASE_INSENSITIVE);
-        Matcher matcher;
-        if (remove_text)
-            matcher = pattern.matcher(this.r_text);
-        else
-            matcher = pattern.matcher(this.text);
-
-        // check all occurance
-        ArrayList<String> text = new ArrayList<>();
-        while (matcher.find()) {
-            String temp = matcher.group();
-            if (!temp.isEmpty()) {
-                text.add(temp);
-            }
-        }
-        return text;
+        Console.WriteLine("__________________");
     }
 
-    private ArrayList<String> match(String re, boolean remove_text) {
-        this.skipWhiteSpace();
-        return matchRegex(re, remove_text);
-    }
+    public void skipWhiteSpace() {
+        String line = this.r_text;
+        Boolean started = false;
+        int count = (line.length() - line.replace("\"", "").length());
 
-    private ArrayList<String> match(String re) {
-        this.skipWhiteSpace();
-        return matchRegex(re, false);
-    }
+        String tempText = "";
 
-    private void skipWhiteSpace() {
-        String line = this.text;
-        boolean started = false;
-        int count = line.length() - line.replace("\"", "").length();
-        String game_text = "";
-        for (char x : this.text.toCharArray()) {
-            if (x == '"') {
+        for (char x : line.toCharArray()) {
+            if (x == '\"') {
                 count--;
                 started = true;
-                // game_text += x;
             } else if (!started || count == 0) {
-                if (Character.isWhitespace(x)) {
+                if (Character.isWhitespace(x))
                     continue;
-                }
             }
 
-            game_text += x;
+            tempText += x;
 
         }
-        this.text = game_text;
+        this.text = tempText;
     }
 
-
-    private void parse() {
-        this.P_text = text();
-        this.com = command();
-        this.names = name();
-        this.params = parameters();
-        this.locs = integer();
-
+    /**
+     * removeQuoteText:
+     *
+     * @ post: This function strips all text in quotations and places it in the rq_text string.
+     */
+    public void removeQuoteText() {
+        if (rq_text == null) {
+            Pattern rgx = Pattern.compile("([\"\'])(?:(?=(\\\\?))\\2.)*?\\1");
+            Matcher m = rgx.matcher(this.text);
+            rq_text = m.replaceAll("");
+        }
     }
 
-    private Command command() {
+    /**
+     * parseNames:
+     *
+     * @post: this function copies all instances of names in the removed quote text and places them in a special
+     * name category
+     */
+    public void parseNames() {
+        for (Name name : Name.values()) {
+            if (this.rq_text.toUpperCase().contains(name.toString().toUpperCase()))
+                this.names.add(name);
+        }
+    }
 
-        this.skipWhiteSpace();
+    /**
+     * ParseCommand:
+     *
+     * @return returns the command that string.rq_text provides
+     * @throws Exception
+     */
+    private Command parseCommand() throws Exception {
 
         if (this.text == null)
-            return null;
+            throw new Exception("Something wrong with card.text");
 
         if (this.text.length() < 2)
-            return null;
+            throw new Exception("Something wrong with card.text");
 
-        Name[] names = Name.values();
-
-        Boolean name = Arrays.stream(names).anyMatch(
-                (n -> this.text.toLowerCase().startsWith(n.toString().toLowerCase())));
-
-        if (name) {
-            return Command.SAY;
+        for (Name name : Name.values()) {
+            if (this.rq_text.toLowerCase().startsWith(name.toString().toLowerCase()))
+                return Command.SAY;
         }
-        switch (this.text.charAt(STRING_START)) {
+
+
+        switch (this.text.charAt(0)) {
 
             case 'i':
                 return Command.IF;
-            case '\"':
+            case '"':
                 return Command.GENERIC_SAY;
             case 'c':
-                return Command.CHOICE;
+                return Command.CHARACTER;
             case 'a':
                 return Command.ANIMATION;
             case 'b':
                 return Command.BACKGROUND;
             case 'm':
                 return Command.MUSIC;
-            case 'f':
+            case 'x':
                 return Command.SOUND_EFFECT;
             case 'v':
                 return Command.VARIABLE;
             case 'w':
                 return Command.WAIT;
-
         }
-        return null;
+        printToLine();
+        throw new Exception("Bad Command Choice");
+
     }
 
-    private ArrayList<String> text() {
-        return match("([\"\'])(?:(?=(\\\\?))\\2.)*?\\1");
-    }
+    /**
+     * parseText:
+     *
+     * @post: puts all instances of dialog. Text with "" in the dialog arrayList
+     */
+    private void parseText() {
+        Pattern pattern = Pattern.compile("([\"\'])(?:(?=(\\\\?))\\2.)*?\\1");
+        Matcher m = pattern.matcher(this.text);
 
-    private ArrayList<Integer> integer() {
-
-        ArrayList<String> str_nums = match("(\\d*)", true);
-
-        try {
-            return str_nums.stream()
-                    .filter(p -> p != null).map(Integer::new)
-                    .collect(Collectors.toCollection(ArrayList::new));
-
-        } catch (NumberFormatException e) {
+        while (m.find()) {
+            dialog.add(m.group());
         }
-        return null;
     }
 
-    private ArrayList<Name> name() {
+    /**
+     * parseParameters
+     *
+     * @post: puts all paramaters inside () brackets into the paramaters array list
+     */
+    public void parseParameters() {
 
-        Name[] names = Name.values();
-        ArrayList<Name> temp = new ArrayList<>();
+        if (!this.rq_text.contains(")"))
+            return;
+        if (!this.rq_text.contains(")"))
+            return;
 
-        for (Name x : names) {
+        int start = this.rq_text.indexOf("(");
+        int end = this.rq_text.indexOf(")");
 
-            String name = x.toString();
-            if (this.r_text.toUpperCase().contains(name.toUpperCase()))
-                temp.add(x);
+        String paramse = this.rq_text.substring(start, end);
+        Pattern pattern = Pattern.compile("([A-Za-z_=]*)");
+        Matcher m = pattern.matcher((paramse));
+
+        while (m.find()) {
+            String check = m.group();
+            if (check.length() <= 1)
+                continue;
+            paramaters.add(check);
         }
-
-        return temp;
     }
 
-    private ArrayList<String> parameters() {
+    /**
+     * parseNumbers:
+     */
+    public void parseNumbers() {
+        Pattern pattern = Pattern.compile("(\\d+)");
+        Matcher m = pattern.matcher(this.rq_text);
 
-        if (!this.r_text.contains(")"))
-            return null;
-        if (!this.r_text.contains("("))
-            return null;
 
-        int start = this.r_text.indexOf("(");
-        int end = this.r_text.indexOf(")");
-
-        String Params = this.r_text.substring(start, end);
-
-        String temp = this.r_text;
-
-        this.r_text = Params;
-        ArrayList<String> params = match("([A-Za-z_]*)", true);
-        this.r_text = temp;
-        return params;
+        while (m.find()) {
+            numbers.add(Integer.parseInt(m.group()));
+        }
     }
+
+    public Boolean requiresInput() {
+        return this.command == Command.GENERIC_SAY || this.command == Command.SAY;
+    }
+
+
 }
 
 

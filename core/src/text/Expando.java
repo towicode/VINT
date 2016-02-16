@@ -1,57 +1,55 @@
 package text;
 
-import java.util.LinkedList;
-
-import MainFrame.Model.console;
+import MainFrame.game.Console;
 
 public class Expando {
 
-  protected int cardNumber;
-  protected int allowedLevel;
-  protected String fileName;
-  protected LinkedList<Card> cards;
-  protected Card currentCard;
+    protected int allowedLevel;
+    protected String fileName;
+    public Card currentCard;
 
-  /**
-   * @param fileName
-   * @param cards
-   */
-  public Expando(String fileName, LinkedList<Card> cards) {
-    this.fileName = fileName;
-    this.cards = cards;
-    this.allowedLevel = 0;
 
-    if (cards == null)
-      return;
+    public Expando(String fileName, String[] card_strings) {
+        this.fileName = fileName;
 
-    if (cards.size() <= 1)
-      return;
+        if (card_strings == null || card_strings.length <= 0) {
+            Console.WriteLine("Error: cards was empty @expando.cs"); //TODO error log
+            return;
+        }
 
-    currentCard = cards.getFirst();
-    currentCard.send();
-  }
+        this.currentCard = new Card(card_strings[0], 0);
+        currentCard.load(currentCard, card_strings);
 
-  public boolean next() {
-
-    if (currentCard.canAdvance()) {
-      currentCard = currentCard.nextCard;
-      while (!currentCard.send()) {
-
-        return next();
-
-      }
-      return true;
     }
-    return false;
-  }
 
-  public boolean previous() {
+    public Boolean next() {
+        if (!currentCard.canAdvance()) {
+            Console.WriteLine("could not advance");
+            return false;
+        }
 
-    if (currentCard.canDeadvance()) {
-      currentCard = currentCard.previousCard;
-      return true;
+        currentCard = currentCard.nextCard;
+
+        // send will return true, once it reaches a point that requires human feedback
+        // otherwise we will keep sending data to the engine that doesn't require human feedback.
+        while (!currentCard.send()) {
+            return next();
+        }
+
+        return true;
     }
-    return false;
-  }
 
+    public Boolean previous() {
+        if (!currentCard.canDeadvance())
+            return false;
+
+        currentCard = currentCard.previousCard;
+        // send will return true, once it reaches a point that requires human feedback
+        // otherwise we will keep sending data to the engine that doesn't require human feedback.
+        while (!currentCard.send()) {
+            return next();
+        }
+
+        return true;
+    }
 }

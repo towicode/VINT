@@ -3,6 +3,7 @@ package text;
 public enum Command {
 
   IF,
+  CHARACTER,
   JUMP,
   RETURN,
   SHOW,
