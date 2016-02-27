@@ -1,0 +1,55 @@
+
+pack.png
+size: 4096,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+abigail_spring_armhang_frown
+  rotate: false
+  xy: 1649, 2
+  size: 317, 1273
+  orig: 317, 1273
+  offset: 0, 0
+  index: -1
+alex_spring_handonhip_smile
+  rotate: false
+  xy: 1968, 58
+  size: 335, 1217
+  orig: 335, 1217
+  offset: 0, 0
+  index: -1
+jade_spring_thinking_smile
+  rotate: false
+  xy: 1278, 37
+  size: 369, 1238
+  orig: 369, 1238
+  offset: 0, 0
+  index: -1
+mari_spring_handonhip_smile
+  rotate: false
+  xy: 462, 49
+  size: 428, 1226
+  orig: 428, 1226
+  offset: 0, 0
+  index: -1
+mia_spring_handsinjacket_smile
+  rotate: false
+  xy: 892, 58
+  size: 384, 1217
+  orig: 384, 1217
+  offset: 0, 0
+  index: -1
+missingno
+  rotate: false
+  xy: 2305, 144
+  size: 391, 1131
+  orig: 391, 1131
+  offset: 0, 0
+  index: -1
+natasha_spring_handonhip_smile
+  rotate: false
+  xy: 2, 22
+  size: 458, 1253
+  orig: 458, 1253
+  offset: 0, 0
+  index: -1

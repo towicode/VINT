@@ -6,32 +6,29 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import input.Keyboard;
+import memory.CurrentBackground;
 import memory.CurrentCommand;
+import memory.CurrentModelActor;
 import text.Command;
 import text.Expando;
 import text.Spreader;
 
-import java.io.IOException;
 import java.util.Observable;
 import java.util.Observer;
 
 public class MainFrame extends ApplicationAdapter implements Observer {
 
     public static AssetManager manager = new AssetManager();
-    private Keyboard keyboard;
-
-
     private static Expando script;
+    private Keyboard keyboard;
     private SpriteBatch batch;
     private BitmapFont font;
-    private TextureAtlas backgroundAtlas;
-    private Sprite sprite;
+    private Sprite textbox;
 
     public static Expando getScript() {
         return script;
@@ -55,15 +52,20 @@ public class MainFrame extends ApplicationAdapter implements Observer {
         script.next();
 
         batch = new SpriteBatch();
-        backgroundAtlas = new TextureAtlas(Gdx.files.internal("backgrounds/pack.atlas"));
-        AtlasRegion region = backgroundAtlas.findRegion("evansapartment_day_spring");
-        sprite = new Sprite(region);
+        CurrentBackground.getInstance();
         font = new BitmapFont();
-        font.setColor(Color.BLACK);
+        font.setColor(Color.WHITE);
+
+        //Textbox
+
+        Texture texture = new Texture(Gdx.files.internal("UI/textbox.png"));
+        textbox = new Sprite(texture);
     }
 
     @Override
     public void render() {
+
+
         Gdx.gl.glClearColor(1, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
@@ -72,9 +74,11 @@ public class MainFrame extends ApplicationAdapter implements Observer {
             script.next();
 
         batch.begin();
-        sprite.draw(batch);
+        CurrentBackground.getInstance().getSprite().draw(batch);
+        textbox.draw(batch);
         if (CurrentCommand.getInstance().getCom() == Command.SAY)
-            font.draw(batch, (CurrentCommand.getInstance().getText().get(0)), 200, 200);
+            font.draw(batch, (CurrentModelActor.getInstance().getActor()), 200, 220);
+        font.draw(batch, (CurrentCommand.getInstance().getText().get(0)), 200, 200);
         batch.end();
 
 
@@ -87,23 +91,7 @@ public class MainFrame extends ApplicationAdapter implements Observer {
     @Override
     public void update(Observable e, Object arg1) {
 
-        //System.out.println(CurrentCommand.getInstance().getCom());
-
-
         Handler.handle();
-/*    CurrentCommand.getInstance().getText().stream()
-        .forEach(p -> console.log(p));*/
-
-/*
-    CurrentCommand.getInstance().getNames().stream()
-        .forEach(p -> console.log(p));
-
-    CurrentCommand.getInstance().getLocs().stream()
-        .forEach(p -> console.log(p));
-
-    CurrentCommand.getInstance().getParams().stream()
-        .forEach(p -> console.log(p));
-*/
 
     }
 }

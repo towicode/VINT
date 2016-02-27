@@ -11,6 +11,7 @@ c(jad, jade_spring_thinking_smile, show)
 #dialog
 jad "audio"
 mas "visual"
+b(historyclass_day)
 jad "I am jade, also known as a strip of bacon."
 
 

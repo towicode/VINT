@@ -7,7 +7,18 @@ public enum Name {
     TESTING,
     MAS,
     CHA,
-    JAD,
+    JAD;
 
 
+    public String full(){
+        switch (this){
+            case MAS:
+                return "Mason";
+            case JAD:
+                return "Jade";
+        }
+
+        return "MissingNo";
+
+    }
 }
