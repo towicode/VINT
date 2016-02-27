@@ -7,8 +7,10 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import input.Keyboard;
 import memory.CurrentCommand;
 import text.Command;
@@ -29,6 +31,7 @@ public class MainFrame extends ApplicationAdapter implements Observer {
     private SpriteBatch batch;
     private BitmapFont font;
     private TextureAtlas backgroundAtlas;
+    private Sprite sprite;
 
     public static Expando getScript() {
         return script;
@@ -53,6 +56,8 @@ public class MainFrame extends ApplicationAdapter implements Observer {
 
         batch = new SpriteBatch();
         backgroundAtlas = new TextureAtlas(Gdx.files.internal("backgrounds/pack.atlas"));
+        AtlasRegion region = backgroundAtlas.findRegion("evansapartment_day_spring");
+        sprite = new Sprite(region);
         font = new BitmapFont();
         font.setColor(Color.BLACK);
     }
@@ -67,6 +72,7 @@ public class MainFrame extends ApplicationAdapter implements Observer {
             script.next();
 
         batch.begin();
+        sprite.draw(batch);
         if (CurrentCommand.getInstance().getCom() == Command.SAY)
             font.draw(batch, (CurrentCommand.getInstance().getText().get(0)), 200, 200);
         batch.end();
