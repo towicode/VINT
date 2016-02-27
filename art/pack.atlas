@@ -1,0 +1,104 @@
+
+pack.png
+size: 4096,4096
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+bedroom_day
+  rotate: false
+  xy: 2, 2890
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+building1_day_spring
+  rotate: false
+  xy: 2, 2168
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+cafe_day
+  rotate: false
+  xy: 1284, 2890
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+campus1_day_spring
+  rotate: false
+  xy: 2, 1446
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+campus2_day_spring
+  rotate: false
+  xy: 1284, 2168
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+commonroom_day
+  rotate: false
+  xy: 2566, 2890
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+dormroom_day
+  rotate: false
+  xy: 2, 724
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+evansapartment_day_spring
+  rotate: false
+  xy: 1284, 1446
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+evanslab_day
+  rotate: false
+  xy: 2566, 2168
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+historyclass_day
+  rotate: false
+  xy: 2, 2
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+labbuilding_day_spring
+  rotate: false
+  xy: 1284, 724
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+libraryexterior_day_spring
+  rotate: false
+  xy: 2566, 1446
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+physicsclass
+  rotate: false
+  xy: 1284, 2
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+skyline_night_spring
+  rotate: false
+  xy: 2566, 724
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1

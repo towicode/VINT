@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import input.Keyboard;
 import memory.CurrentCommand;
 import text.Command;
@@ -27,6 +28,7 @@ public class MainFrame extends ApplicationAdapter implements Observer {
     private static Expando script;
     private SpriteBatch batch;
     private BitmapFont font;
+    private TextureAtlas backgroundAtlas;
 
     public static Expando getScript() {
         return script;
@@ -50,6 +52,7 @@ public class MainFrame extends ApplicationAdapter implements Observer {
         script.next();
 
         batch = new SpriteBatch();
+        backgroundAtlas = new TextureAtlas(Gdx.files.internal("backgrounds/pack.atlas"));
         font = new BitmapFont();
         font.setColor(Color.BLACK);
     }
