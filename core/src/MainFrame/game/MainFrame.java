@@ -1,5 +1,6 @@
 package MainFrame.game;
 
+import MainFrame.Model.TypeWriter;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -10,6 +11,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Interpolation;
 import input.Keyboard;
 import memory.CurrentBackground;
 import memory.CurrentCommand;
@@ -25,10 +27,14 @@ public class MainFrame extends ApplicationAdapter implements Observer {
 
     public static AssetManager manager = new AssetManager();
     private static Expando script;
+    final float degressPerSecond = 10f;
     private Keyboard keyboard;
     private SpriteBatch batch;
     private BitmapFont font;
     private Sprite textbox;
+    private TypeWriter typewriter = new TypeWriter();
+    private float rot;
+    float[] alphas;
 
     public static Expando getScript() {
         return script;
@@ -38,8 +44,10 @@ public class MainFrame extends ApplicationAdapter implements Observer {
         MainFrame.script = script;
     }
 
+
     @Override
     public void create() {
+
 
         CurrentCommand.getInstance().addObserver(this);
         keyboard = new Keyboard();
@@ -60,12 +68,19 @@ public class MainFrame extends ApplicationAdapter implements Observer {
 
         Texture texture = new Texture(Gdx.files.internal("UI/textbox.png"));
         textbox = new Sprite(texture);
+
+
+        typewriter.getInterpolator().setInterpolation(Interpolation.linear);
+
+        // set some custom cursors
+        typewriter.getAppender().set(new CharSequence[]{""}, 1.5f / 4f);
     }
 
     @Override
     public void render() {
 
 
+        float delta = Gdx.graphics.getDeltaTime();
         Gdx.gl.glClearColor(1, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
@@ -76,9 +91,36 @@ public class MainFrame extends ApplicationAdapter implements Observer {
         batch.begin();
         CurrentBackground.getInstance().getSprite().draw(batch);
         textbox.draw(batch);
-        if (CurrentCommand.getInstance().getCom() == Command.SAY)
-            font.draw(batch, (CurrentModelActor.getInstance().getActor()), 200, 220);
-        font.draw(batch, (CurrentCommand.getInstance().getText().get(0)), 200, 200);
+
+
+
+        //TYPE WRITER TESTING:::
+
+        CharSequence cur = typewriter.updateAndType(CurrentCommand.getInstance().getText().get(0), delta);
+
+
+        float last_x = 200;
+        for (int i = 0; i < cur.length(); i++){
+            alphas[i] = (alphas[i] + Gdx.graphics.getDeltaTime() *  degressPerSecond) /*% 255*/;
+            if (alphas[i] > 1)
+                alphas[i] = 1;
+            font.setColor(1, 1, 1, alphas[i]);
+            String charString = String.valueOf(cur.charAt(i));
+            font.draw(batch, charString, last_x, 200);
+            last_x = last_x + font.getBounds(charString).width;
+//            font.setColor(1, 1, 1, 1);
+//            font.draw(batch, String.valueOf(cur.charAt(i)), 200 + i * 10, 180);
+
+        }
+
+        // For debugging alpha to word ratio
+//        for (int i = 0; i < alphas.length; i++){
+//            System.out.println(i + " " +alphas[i]);
+//        }
+
+
+        font.setColor(1, 1, 1, 1);
+        font.draw(batch, (CurrentModelActor.getInstance().getActor()), 200, 220);
         batch.end();
 
 
@@ -92,6 +134,10 @@ public class MainFrame extends ApplicationAdapter implements Observer {
     public void update(Observable e, Object arg1) {
 
         Handler.handle();
+        typewriter.reset(); //Todo in text handler
+        if (CurrentCommand.getInstance().getCom() == Command.SAY) {
+            alphas = new float[(CurrentCommand.getInstance().getText().get(0).length())];
+        }
 
     }
 }
