@@ -46,7 +46,7 @@ public class Claim {
         parseText();
         parseParameters();
         parseNumbers();
-        this.printToLine(); //TODO DEBUG ONLY
+        //this.printToLine(); //TODO DEBUG ONLY
         CurrentCommand.getInstance().setCommand(command, dialog, names, paramaters, numbers);
 
     }

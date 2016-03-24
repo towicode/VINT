@@ -1,7 +1,5 @@
 package MainFrame.game;
 
-import MainFrame.Model.BackgroundActor;
-import MainFrame.Model.MyActor;
 import MainFrame.Model.TypeWriter;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -17,8 +15,6 @@ import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.utils.viewport.FillViewport;
-import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import input.Keyboard;
 import memory.CurrentBackground;
@@ -110,7 +106,6 @@ public class MainFrame extends ApplicationAdapter implements Observer {
         stage.draw();
 
         batch.begin();
-        //CurrentBackground.getInstance().getSprite().draw(batch);
         textbox.draw(batch);
 
 
