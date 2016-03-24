@@ -46,6 +46,7 @@ public class Claim {
         parseText();
         parseParameters();
         parseNumbers();
+        this.printToLine(); //TODO DEBUG ONLY
         CurrentCommand.getInstance().setCommand(command, dialog, names, paramaters, numbers);
 
     }
@@ -125,6 +126,10 @@ public class Claim {
      * name category
      */
     public void parseNames() {
+
+        if (this.rq_text.contains("("))
+            return;
+
         for (Name name : Name.values()) {
             if (this.rq_text.toUpperCase().contains(name.toString().toUpperCase()))
                 this.names.add(name);
@@ -200,7 +205,7 @@ public class Claim {
 
         if (!this.rq_text.contains(")"))
             return;
-        if (!this.rq_text.contains(")"))
+        if (!this.rq_text.contains("("))
             return;
 
         int start = this.rq_text.indexOf("(");
@@ -212,7 +217,7 @@ public class Claim {
 
         while (m.find()) {
             String check = m.group();
-            if (check.length() <= 1)
+            if (check.length() < 1)
                 continue;
             paramaters.add(check);
         }
@@ -237,6 +242,4 @@ public class Claim {
 
 
 }
-
-
 

@@ -117,7 +117,6 @@ public class Card {
             e.printStackTrace();
             return true;
         }
-        claim.printToLine(); //TODO : This is only for debug
         //reset the allowed level, so if an if statement ends we don't grab the next indent.
         MainFrame.getScript().allowedLevel = this.indentLevel;
         //evaluates an if statement
