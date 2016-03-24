@@ -11,8 +11,9 @@ c(jad, jade_spring_thinking_smile, show)
 #dialog
 jad "audio"
 mas "visual"
-b(historyclass_day)
+b(historyclass_day,a,b,c,d,e,g,h,i,j,k,l,m,n,o,fade)
 jad "I am jade, also known as a strip of bacon."
+"Jade dies of fire burns"
 
 
 #hide jade

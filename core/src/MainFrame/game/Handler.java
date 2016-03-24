@@ -45,20 +45,56 @@ public class Handler {
 
     }
 
+
+    private static void handleAnimation() {
+        ArrayList<String> params = getInstance().getParams();
+        handleAnimation(params);
+    }
+
+
+    public static void handleAnimation(ArrayList<String> params){
+
+        String possible_animations = " pkeuIfT7 show hide disolve bedroom_day ClCs7pb1 5jIg6p5z ahQIezVK gpvTi8wJ DFWYobkW 1clZzJhv zZAQbpke qO1YSWaM jxdVgOT0 Bq1fDtiq nShStL9F rVChRrNu cjpqTKjY fYl79Jst GHCh9yhe MYk6frkh mBwmilFo 7cIA1P2V u9ktzHJi oPHnl3VV 8GWmOL6A GEzMyK1y 1yx8kUgn XbG79BzU x9xghQsL GfB3BOBu 49Dlw0uN izsxm3iZ gx0hFDeC sHapDrYo i7eMSEl8 xJjBCdZ0 JHhK5fWY iG8t1FoD fade Ydemw28w ";
+
+        System.out.println(System.currentTimeMillis());
+        for (String k : params){
+            if (possible_animations.contains(" " + k + " ")){
+                System.out.println("animation is: " + k);
+                params.remove(k);
+                break;
+            }
+        }
+        System.out.println(System.currentTimeMillis());
+    }
+
+    /**
+     * This void rips out the first background name out of the parameters and then feeds the rest of the parameters
+     * to the animation function
+     */
     private static void handleBackground() {
 
-        // get the first one.
-        // TODO: We need to have this handle options
+        CurrentBackground.getInstance().setName(null);
 
         ArrayList<String> params = getInstance().getParams();
+        String background_name = null;
 
-        if (params.size() == 0)
-            CurrentBackground.getInstance().setName(null);
 
-        else {
-            String background_name = params.stream().findFirst().get();
-            CurrentBackground.getInstance().setName(background_name);
+        /**
+         * This for block finds the first instance of a background name and removes it.
+         * TODO: animation names like show and hide should not be allowed in background names
+         */
+        for (String k : params){
+            if (isBackground(k)){
+                background_name = k;
+                params.remove(k);
+                break;
+            }
         }
+
+
+        CurrentBackground.getInstance().setName(background_name);
+        handleAnimation(params);
+
 
 
     }
@@ -109,5 +145,9 @@ public class Handler {
             if (Character.digit(s.charAt(i), radix) < 0) return false;
         }
         return true;
+    }
+
+    private static boolean isBackground(String s){
+        return CurrentBackground.background_list.contains(" " + s + " ");
     }
 }
