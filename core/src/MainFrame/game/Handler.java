@@ -1,10 +1,7 @@
 package MainFrame.game;
 
 import MainFrame.Model.console;
-import memory.CurrentBackground;
-import memory.CurrentCommand;
-import memory.CurrentModelActor;
-import memory.CurrentProgress;
+import memory.*;
 import text.Command;
 import text.Name;
 
@@ -31,6 +28,24 @@ public class Handler {
         else if (getInstance().getCom().equals(Command.SAY)){
             handleSay();
         }
+        
+        else if (getInstance().getCom().equals(Command.CHARACTER)){
+            handleCharacter();
+        }
+    }
+
+    private static void handleCharacter() {
+
+        ArrayList<String> params = getInstance().getParams();
+
+        if (params.size() == 0)
+            CurrentSprites.getInstance().add("missingno");
+
+        else {
+            String character_name = params.stream().findFirst().get();
+            CurrentSprites.getInstance().add(character_name);
+        }
+
     }
 
     private static void handleSay() {
@@ -59,7 +74,6 @@ public class Handler {
             String background_name = params.stream().findFirst().get();
             CurrentBackground.getInstance().setName(background_name);
         }
-
 
     }
 

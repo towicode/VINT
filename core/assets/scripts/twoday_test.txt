@@ -4,9 +4,10 @@ b(bedroom_day,show)
 #play relaxing music
 m(gb_relaxing)
 
-#show jade
-c(jad, jade_spring_thinking_smile, show)
+# show jade
+c(jade_spring_thinking_smile, show)
 
+# c(jad, jade_spring_thinking_smile, show)
 
 #dialog
 jad "audio"
@@ -15,8 +16,8 @@ b(historyclass_day)
 jad "I am jade, also known as a strip of bacon."
 
 
-#hide jade
-c(jad, hide)
+# hide jade
+# c(jad, hide)
 
 b()
 #black screen

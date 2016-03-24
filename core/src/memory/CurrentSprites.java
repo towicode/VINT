@@ -1,8 +1,12 @@
 package memory;
 
+import MainFrame.Model.BackgroundActor;
+import MainFrame.Model.CharacterActor;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import MainFrame.game.MainFrame;
+
 
 import java.util.ArrayList;
 
@@ -36,23 +40,19 @@ public class CurrentSprites {
 
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String[] name) {
-
-        if (name == null) {
-
-        } else {
-//            this.name = name;
-//            region = backgroundAtlas.findRegion(name);
-        }
-        //this.sprite = new Sprite(this.region);
-    }
 
     public Sprite getSprite() {
         //return sprite;
         return null;
     }
+
+    public void add(String o) {
+        region = backgroundAtlas.findRegion(o);
+
+        //this.sprite = new Sprite(this.region);
+        CharacterActor current = new CharacterActor(region);
+
+        MainFrame.addActor(current, false);
+    }
+
 }

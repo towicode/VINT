@@ -1,5 +1,7 @@
 package memory;
 
+import MainFrame.Model.BackgroundActor;
+import MainFrame.game.MainFrame;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -57,7 +59,9 @@ public class CurrentBackground {
             this.name = name;
             region = backgroundAtlas.findRegion(name);
         }
-        this.sprite = new Sprite(this.region);
+        //this.sprite = new Sprite(this.region);
+        BackgroundActor current = new BackgroundActor(region);
+        MainFrame.addActor(current, true);
     }
 
     public Sprite getSprite() {

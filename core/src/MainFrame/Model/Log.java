@@ -2,19 +2,19 @@ package MainFrame.Model;
 
 public class Log {
 
-	private Actor actor;
+	private ModelActor actor;
 	private String text;
 
-	public Log(Actor actor, String text) {
+	public Log(ModelActor actor, String text) {
 		this.actor = actor;
 		this.text = text;
 	}
 
-	public Actor getActor() {
+	public ModelActor getActor() {
 		return actor;
 	}
 
-	public void setActor(Actor actor) {
+	public void setActor(ModelActor actor) {
 		this.actor = actor;
 	}
 
