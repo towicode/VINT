@@ -18,7 +18,7 @@ public class Song {
 
 	}
 
-	public static void PlaySong(Song x, double tile, boolean loop) {
+	public static void PlaySong(Song x, double time, boolean loop) {
 
 	}
 
