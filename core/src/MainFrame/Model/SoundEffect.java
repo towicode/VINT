@@ -7,5 +7,9 @@ public class SoundEffect {
 	public static void playSoundEffect(SoundEffect x){
 		
 	}
+	
+	public static void playSound(SoundEffect x, boolean loop) {
+		
+	}
 
 }
