@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: libgdx-utils-0.13.2.jar gdx-1.7.1.jar
+Main-Class: VINT.game.desktop.DesktopLauncher

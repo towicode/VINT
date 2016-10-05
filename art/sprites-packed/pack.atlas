@@ -1,0 +1,216 @@
+
+pack.png
+size: 16384,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+abigail_spring_armhang_frown
+  rotate: false
+  xy: 9540, 745
+  size: 317, 1272
+  orig: 317, 1272
+  offset: 0, 0
+  index: -1
+abigail_spring_armhang_mad
+  rotate: false
+  xy: 9859, 745
+  size: 317, 1272
+  orig: 317, 1272
+  offset: 0, 0
+  index: -1
+alex_spring_handonhip_smile
+  rotate: false
+  xy: 10178, 800
+  size: 335, 1217
+  orig: 335, 1217
+  offset: 0, 0
+  index: -1
+alex_spring_handonhip_smirk
+  rotate: false
+  xy: 10515, 800
+  size: 335, 1217
+  orig: 335, 1217
+  offset: 0, 0
+  index: -1
+crowd_outlines
+  rotate: false
+  xy: 2, 1297
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+erik_spring_handsonhip_grin
+  rotate: false
+  xy: 551, 3
+  size: 485, 1292
+  orig: 485, 1292
+  offset: 0, 0
+  index: -1
+erik_spring_handsonhip_smile
+  rotate: false
+  xy: 1038, 3
+  size: 485, 1292
+  orig: 485, 1292
+  offset: 0, 0
+  index: -1
+evans_spring_handinpocket_frown
+  rotate: false
+  xy: 1525, 355
+  size: 447, 1305
+  orig: 447, 1305
+  offset: 0, 0
+  index: -1
+evans_spring_handinpocket_grin
+  rotate: false
+  xy: 1974, 355
+  size: 447, 1305
+  orig: 447, 1305
+  offset: 0, 0
+  index: -1
+evans_spring_handinpocket_smile
+  rotate: false
+  xy: 2423, 355
+  size: 447, 1305
+  orig: 447, 1305
+  offset: 0, 0
+  index: -1
+glasses
+  rotate: false
+  xy: 1284, 1662
+  size: 1280, 355
+  orig: 1280, 355
+  offset: 0, 0
+  index: -1
+jade_spring_holdinghands_laugh
+  rotate: false
+  xy: 6213, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+jade_spring_holdinghands_question
+  rotate: false
+  xy: 6584, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+jade_spring_holdinghands_smile
+  rotate: false
+  xy: 6955, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+jade_spring_thinking_laugh
+  rotate: false
+  xy: 7326, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+jade_spring_thinking_question
+  rotate: false
+  xy: 7697, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+jade_spring_thinking_smile
+  rotate: false
+  xy: 8068, 780
+  size: 369, 1237
+  orig: 369, 1237
+  offset: 0, 0
+  index: -1
+mari_spring_handonhip_laugh
+  rotate: false
+  xy: 3310, 793
+  size: 428, 1224
+  orig: 428, 1224
+  offset: 0, 0
+  index: -1
+mari_spring_handonhip_smile
+  rotate: false
+  xy: 3740, 793
+  size: 428, 1224
+  orig: 428, 1224
+  offset: 0, 0
+  index: -1
+mia_spring_handsinjacket_laugh
+  rotate: false
+  xy: 5058, 803
+  size: 383, 1214
+  orig: 383, 1214
+  offset: 0, 0
+  index: -1
+mia_spring_handsinjacket_serious
+  rotate: false
+  xy: 5443, 803
+  size: 383, 1214
+  orig: 383, 1214
+  offset: 0, 0
+  index: -1
+mia_spring_handsinjacket_smile
+  rotate: false
+  xy: 5828, 803
+  size: 383, 1214
+  orig: 383, 1214
+  offset: 0, 0
+  index: -1
+missing_female
+  rotate: false
+  xy: 10852, 906
+  size: 388, 1111
+  orig: 388, 1111
+  offset: 0, 0
+  index: -1
+missing_male
+  rotate: false
+  xy: 2872, 725
+  size: 436, 1292
+  orig: 436, 1292
+  offset: 0, 0
+  index: -1
+natasha_spring_handonhip_smile
+  rotate: false
+  xy: 4170, 812
+  size: 442, 1205
+  orig: 442, 1205
+  offset: 0, 0
+  index: -1
+natasha_spring_handonhip_surprised
+  rotate: false
+  xy: 4614, 812
+  size: 442, 1205
+  orig: 442, 1205
+  offset: 0, 0
+  index: -1
+richard_spring_handinpocket_frown
+  rotate: false
+  xy: 8439, 770
+  size: 365, 1247
+  orig: 365, 1247
+  offset: 0, 0
+  index: -1
+richard_spring_handinpocket_grin
+  rotate: false
+  xy: 8806, 770
+  size: 365, 1247
+  orig: 365, 1247
+  offset: 0, 0
+  index: -1
+richard_spring_handinpocket_smile
+  rotate: false
+  xy: 9173, 770
+  size: 365, 1247
+  orig: 365, 1247
+  offset: 0, 0
+  index: -1
+zach_spring_fedoratip_smirk
+  rotate: false
+  xy: 2, 2
+  size: 547, 1293
+  orig: 547, 1293
+  offset: 0, 0
+  index: -1

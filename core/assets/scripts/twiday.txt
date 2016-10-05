@@ -1,0 +1,1790 @@
+#Direction for Demo and Code Examples
+#Demo Bugs
+
+# sc(Introduction)
+b(intro_bus,show)
+m(am_bus)
+
+"The spinning rubber tires findstires of the bus find a couple of potholes that shake the bus and send me back to reality. I turn my music up a little louder, and press my earbuds in a little deeper."
+"Just like that, the world fades away: no passengers, no drivers, no bumps. Just scenery whizzing by and the same song I've listened to more times than I can count."
+"Inevitably my mind drifts back to the voicemail that turned, —-well, could turn-— my life around. Slowly, the music begins to fade away into white noise. If I focus, I can hear my uncle's words just as clear as when I first played it back."
+
+eva "Mason, I have a job. I need you. I don't know what you're up to these days, but this is the next big thing. We're going to be famous."
+ 
+"My lip curls automatically. I bet he did know what I'm up to; my parents weren't exactly quiet about it. I don't really know him all that well, but the phrase 'next big thing' instantly conjures up an image of his messy hair and white goatee. It's just the sort of thing he's fond of saying."
+"Maybe all scientists are like that."
+ 
+eva "It could take several months, but you can stay here as part of my staff. They'll even let you enroll here! Just one thing: there's no backing out. I've already worked out the details with your parents. Meet me on campus tomorrow afternoon."
+ 
+"I tried to call him back, but all I got was an automated voice that said the line had been shut off. Crazy, right? Just the sort of thing my uncle would pull. He's a caricature of the kind of mad scientist you see in b-movies."
+"'Next big thing?' Yeah, sure. He always says that about whatever project he's working on, but it's never true. I don't think he's ever seen a cent from any of his crazy inventions."
+"He usually calls us at least once a year convinced he's made a breakthrough, but we didn't hear from him at all last year. And he never calls me specifically. Plus, all this talk about it taking months of my life, and there not being a way out of the deal--pure craziness."
+"What kind of 18-year-old would sign his life away, take a bus to a university miles from his home, and get slingshot haphazardly into classes that have already begun?"
+"Let me tell you, he'd have to be a real loser. A loser who couldn't get into a single university. A loser who watched his friends get into their dream schools and leave him behind."
+"Who couldn't bear the constant talk of classes this, dorms that. Who couldn't evade questions forever about what college he ended up choosing. A loser with no prospects."
+"You bet your ass I took that opportunity, grabbed onto it like a drowning man grabs a rope. That's right: I'm the loser, as if you couldn't guess. I'm the hack who couldn't make it."
+"See that reflection in the glass? Mason Smith, 2.0 GPA."
+"No outstanding achievements."
+"No meaningful extracurriculars."
+"No shining letters of recommendation."
+"My parents didn't seem that surprised when I got denied by every college I applied for. Maybe they'd known I was a loser all along. Whatever. My life ended the day the last rejection letter arrived: state school. My safety school."
+"But some twist of fate seems to have thrown me a lifeline. And that lifeline leads to NEST, every nerd's dream school. How could I refuse? Hell, just letting me set foot on campus will put me closer to greatness than I ever would otherwise. It's way too good to be true."
+"But just once, it would be nice to be the guy who gets the big breaks."
+"Yeah right... I wouldn't be surprised if my alarm clock wakes me up the second I step off the bus."
+ 
+b(intro_bus,hide)
+b(nest_parking_lot,show)
+m(gb_relaxing)
+ 
+"No alarm clock. So far so good."
+"The bus stops sooner than I expect, and I remember to grab my backpack just in time. I'm so caught up in staring at the university that I hardly even notice the bus leave."
+"People jostle and bump into me as I stand there. I feel like a fish out of water, overwhelmed by the sheer awe of the buildings before me. I stumble over to the nearest bench and try to take in my new surroundings."
+"The campus is gigantic--far bigger than I'd heard. The most incredible part is the long, verdant lawn that leads between a dozen buildings, more windows than structure, each more futuristic than the last. If it wasn't for the students rushing to and fro, I'd think I was on a movie set."
+
+x(class_bell)
+
+"School bells ring in the distance and students come pouring out of a few of the buildings. I guess I arrived just before the end of a period, or whatever colleges use to separate classes."
+"Belatedly I look around and try to pick my uncle out from the crowd, but after a few moments of searching I realize he's not there."
+"Actually, why would he be? All he told me is 'afternoon', and here I am at 1 PM. For all I know he could have meant to meet on the stroke of 12. He could have already decided I wasn't coming and left."
+"I check through my pockets: a little less than ten bucks, my phone, and a bottle cap. Combining that with what I have in my backpack... that's almost ten bucks, a phone, a bottle cap, some clothes and my laptop. The sum total of my earthly possessions, and the bottle cap doesn't count."
+"I could catch a bus back, but I don't want this trip to have been for nothing. My parents had started to make noises about finding me a job after they got over the shock of me not getting accepted to any schools. What kind of place hires a high school grad these days?"
+"Hey, maybe I have a talent for flipping burgers. One day I could aspire to be the manager of the local fast food joint. What a lofty goal."
+"Besides, this might be the closest I ever get to the NTI. I may as well pretend I'm just a new student on the path to greatness--starting two weeks late--dreaming of a future in engineering or the sciences or... or anything really."
+"Anything but the truth: I'm a nobody with no prospects and no clue what he wants to do with his life."
+"But no one has to know that."
+ 
+#sc(on_campus)
+b(nest_parking_lot,hide)
+b(campus1_day_spring,show)
+ 
+"I stand up, shrug on my backpack and walk onto campus."
+"Just a few minutes in I begin to realize it's even bigger than I initially thought. The dozens of carefully-maintained trees make it seem small at first glance but above the tree line there are other far-off buildings that, going by the architecture, might also be part of NEST. Just how far does it go?"
+"As I slow down to appreciate the campus, a pair of students brush past me. I absentmindedly listen in and find myself stopping short."
+ 
+m(am_crowd1)
+c(xtra,crowd_outlines,show,fullscreen)
+ 
+"Out of five sentences I understood only four words: physics, light, curve, integral. And I'm not so sure on the last one."
+"Now that I've stopped, more people rush by me, each group talking about something more obtuse than the last. Math, chemistry, engineering, literary analysis. I hear names, formulas and equations tossed around with the ease I might expect of phrases about the weather."
+"Dostoevsky's strength is in self-identification and projection. The Fermi paradox presupposes we're right about the nature of extraterrestrial life. What do you think about the Bernoulli distribution? Personally, I can't believe how easy Potential Energy makes inelastic collisions."
+"The voices blur together until all I can hear is a dull buzzing. I keep a small smile on my face; it's frozen in the expression of 'please go on, I'm listening.'"
+"What am I doing here?"
+"I don't belong in a place like this, where people talk as if they've got PHDs and Masters Degrees and Doctorates under their belts. What was I thinking, trying to fit in? I'm sure they can tell just by looking at me that I don't belong."
+"I quickly start walking again so as not to seem too out-of-place. I'm just waiting for someone to shout 'Hey, look at this guy! What's he doing here?'"
+
+m(am_crowd1,stop)
+
+who "Watch out, bro!"
+"On reflex I turn, just as a yellow Frisbee comes spinning at my head."
+
+x(impact_hit_light)
+# fx(white_flash)
+a(xtra,hide)
+
+"The disc never reaches me. Inches in front of my face a hand shoots out and grabs it. A second later the Frisbee gets whipped across the field again. Startled, I follow the arm up to its owner."
+
+c(eri,erik_spring_handsonhip_smile,show)
+
+m(gb_mellow1)
+who "Sorry, man. You alright?"
+
+"He's huge. Even though he's only a couple inches taller than me, his frame looks like it could stop a speeding car. He's all muscle and brawn and messy golden hair. A big smile is stamped on his face."
+"It takes me a moment to realize I haven't said anything."
+
+mas "Yeah, I'm fine. Nice catch."
+
+c(eri,erik_spring_handsonhip_grin)
+
+"He laughs, big and booming. He reminds me of the jocks from my high school: dumb but well-meaning."
+
+who "Sure thing, dude. The name's Erik, by the way."
+mas "Mason. Nice to meet you."
+
+c(eri,erik_spring_handsonhip_smile)
+
+eri "Same, same. Hey, you want to join? More the merrier."
+mas "Nah, I gotta get to my next class. Maybe next time."
+"It's a lie, but it's a hell of a lot simpler than explaining the truth. That makes it like a mostly white lie, right?"
+eri "Absolutely. Hey Mitch, throw it already!"
+
+a(eri,hide)
+
+"He sprints off as the guy in question flicks it far away. I shake my head and keep on walking. I even start feeling a little better until I come back to my senses."
+"What am I doing here?"
+
+who "What are you doing here?"
+
+c(ric,richard_spring_handinpocket_smile,show)
+
+"I spin around and try not to jump out of my skin when I find myself face-to-face with a grinning man in a lab coat. He looks around 30, but the shock of his hair, almost sticking straight up, gives a much younger impression."
+who "You're Evans' nephew, right? He said you'd be arriving sometime around now."
+"I breathe a short sigh of relief."
+mas "That's me. Are you his assistant?"
+who "His right hand-man, that's me! Come on, there's no time to waste. Has he told you anything about his breakthrough?"
+mas "No. What is it?"
+"He hesitates."
+who "It would be better for him to tell you. Maybe show you. Come on, I'll show you to his lab."
+
+a(ric,hide)
+
+"He sets off at a brisk pace and I'm content to follow. The other students don't seem to pay too much attention to the guy in a lab coat; maybe seeing him is an everyday thing. Maybe people are like that all the time around here."
+mas "Hey, uh--"
+
+c(ric,richard_spring_handinpocket_smile,show)
+
+who "Right!" 
+"He slaps his forehead dramatically. What a ham."
+who "My name is Richard. You can call me Dick."
+
+c(ric,richard_spring_handinpocket_grin)
+
+"I stare at him for a moment. I can see why my uncle chose him: they both have the same kind of deadpan humor." 
+
+mas "Richard it is. My name's Mason."
+"He keeps walking. Doesn't like handshakes, I guess."
+mas "If you don't mind me asking, how did you pick me out? There are a lot of students around here."
+"He laughs. It sounds like a bark." 
+ric "Haven't you noticed? It's school pride day. Everyone's wearing the NEST colors. You're the only one who stands out. No purple, no black."
+mas "Oh."
+
+c(ric,richard_spring_handinpocket_smile)
+
+"Maybe that's what my uncle was counting on. On the other hand, I kind of doubt it. More likely it was just a lucky coincidence."
+"Could I have been left wandering for hours until they did find me? It's better not to think about."
+
+#sc(welcome_to_the_jungle)
+b(campus1_day_spring,hide)
+b(labbuilding_day_spring,show)
+c(ric,richard_spring_handinpocket_smile)
+m(gb_mellow2)
+
+"The laboratory building is immense. Almost like they were trying to replicate the great wall with glass and concrete. We pause by the door as Richard fishes for something in his pockets."
+
+mas "Is my uncle really this important?"
+"I can't quite keep the awe out of my voice."
+ric "Absolutely!"
+
+"HeThe assistant laughs as he says it."
+
+ric "He's probably the most well-known researcher here. The administration expects great things from him."
+
+"He slides what looks like a key card in a slot by the doorknob."
+
+ric "But this building isn't all his, if that's what you're wondering. It's part science labs, part individual professors, and part lecture halls. We have almost too much room as it is; I can't imagine trying to fill this entire hall by ourselves."
+
+b(labbuilding_day_spring,hide)
+b(hallway_day,show)
+c(ric,richard_spring_handinpocket_smile)
+x(door_open)
+
+"He pulls the door open and ushers me inside. Only a few students or assistants seem to be around right now, and none of them pay us any mind. I try to keep track of the twists and turns we take, but I'm quickly lost."
+"It's a good thing I have Richard to guide me; hopefully, he'll be around to lead me out of here, too."
+"We stop in front of a door marked '138'. On closer inspection, there's a tiny nameplate that says 'Professor Evans.' I guess this is the place. My guide pulls out his key card and slides it."
+
+x(door_keycard_unlock)
+b(hallway,hide)
+b(evanslab_day,show)
+
+"After a few seconds we hear a 'click' and the door unlatches."
+"Richard pulls the door open without knocking and calls down."
+
+b(hallway,hide)
+b(evanslab_day,show)
+c(ric,richard_spring_handinpocket_smile)
+
+ric "Professor? He's here."
+
+"My uncle's familiar voice answers tersely."
+
+eva "Be sure to shut the door as you come in."
+
+"The door closes behind me with a final-sounding squeak. I take advantage of the brief lull to look around my uncle's lab."
+"It's a mess, to put it succinctly. Every conceivable surface, desks, tables, even the tops of monitors, have been completely covered by a chaotic assortment of what looks like random junk. Papers are scattered on the floor, some with footprints on them, and half-written equations cover the walls."
+"Plus the whole place smells like death. Maybe because it's like a million degrees in here. Hasn't anyone heard of air conditioning?"
+
+eva "I'll be with you two in a second."
+
+"He's facing away, hunched over the only partially-clean workspace in the room, puttering over something I can't quite see. I wrinkle my nose as he absentmindedly reaches over and shovels some ancient-looking Chinese takeout into his mouth. I guess that's where the smell is coming from."
+"It looks like he hasn't left this room in ages."
+
+ric "(He hasn't left this room in almost a week.)" 
+"Richard leans close and whispers it to me like it's some kind of secret. Guess I wasn't far off."
+mas "Why? Has he hit another of his famous breakthroughs?" 
+
+c(ric,richard_spring_handinpocket_frown)
+
+"He frowns at the sarcasm in my voice. Tough shit. I've known him longer."
+ric "You don't understand. This could change the world. These glasses are the foundation--"
+"He cuts himself off, leaving me to wonder what exactly the hell is going on."
+"Glasses?"
+
+a(ric,right)
+c(ric,richard_spring_handinpocket_smile)
+c(eva,evans_spring_handinpocket_smile,show,left)
+# cex(ric,neutral)
+
+eva "Mason. Glad you could come."
+
+"I turn to see my uncle turning the very last screw, standing up, stretching. He makes his way to me with practiced ease, somehow managing to step on the few bare spots on the ground. He stops a couple feet away from me and we both pause awkwardly."
+"I'm never sure how to act around him; it seems like he's always in a world of his own, complete with strange social customs."
+"He coughs."
+
+eva "Glad you could come. I, er..." 
+"He looks behind me, towards Richard, with a helpless expression on his face."
+ric "The breakthrough?"
+
+c(eva,evans_spring_handinpocket_grin)
+
+"My uncle's face lights up."
+eva "Right, yes, exactly! Mason, I know you've heard this from me a great deal but right now you and I are standing on the very edge of greatness!"
+"He's starting to fly into the fervor I know so well."
+eva "Welcome to Ground Zero of the biggest technological breakthrough since sliced bread. I call it--LENS!"
+mas "A pair of glasses?"
+eva "Yes, the glasses! Exactly! They-- you heard my message?"
+mas "Of course. Otherwise--"
+eva "Yes, yes, otherwise you wouldn't have known to come. Excellent point. Then you must know this is a very big secret. If you agree to assist me with this project, there'll be no turning back. Maybe for a whole year. Maybe for your whole life!" 
+
+c(eva,evans_spring_handinpocket_smile)
+
+"He tries to sound dramatic, but it just sounds crazy."
+"Still, it's not like I'm here because I have a dozen other options. Or even one."
+mas "Yeah, sure, binding agreement. I'm in."
+
+c(eva,evans_spring_handinpocket_grin)
+
+"A genuine grin spreads across my uncle's face, and he practically skips back to his workstation."
+eva "Excellent! So, the major breakthrough I stumbled upon was in my experimentation on the visual cortexes and just like any other researcher I've often wondered to myself 'how much information can the eyes take in?' so of course--" 
+eva "Ah, right. It's just so liberating being able to speak about this; you'll have to forgive me. This... this is the work I'll go down in history for!"
+"He holds out a pair of glasses to me, crowing in exultation."
+
+c(glasses,show)
+
+"..."
+ 
+mas "Reading glasses?"
+
+c(eva,evans_spring_handinpocket_smile)
+
+"I look around. No one's laughing. Was this all just a cruel prank?"
+
+a(glasses,hide)
+
+eva "Not just any reading glasses, my boy! They're self-computing, hold a huge charge and best of all, the software is completely modular!"
+mas "Glasses that are computers. You know other people have had that idea before, right?"
+ric "Of course other people have, but you don't see half the students out there wearing their products, do you? Every company that's tried--and failed--has had the same kind of problems."
+eva "Their product is too bulky, looks silly, is limited in computing power, and worst of all is tightly regulated. Ours has none of these issues."
+mas "So?"
+eva "So, my boy, we're about to revolutionize the industry!" 
+ric "If it works."
+
+c(eva,evans_spring_handinpocket_grin)
+
+eva "Of course, of course. And that's what you're here for. You're going to be the research subject for the greatest piece of scientific development of the last ten years!"
+"..."
+
+c(eva,evans_spring_handinpocket_smile)
+
+"There's a silence. I'm not sure if I should be smiling and I have no idea what to say. My uncle waits expectantly for... what? For me to jump with joy at being his guinea pig? His assistant coughs again."
+
+ric "There will, of course, be the benefits I believe Professor Evans has mentioned. You're entered into the budget as a business expense, so you'll have plenty of resources. You'll get to stay here, at the forefront of the NTI, and of course, you'll get to experiment with the tech."
+ric "And you'll love this part...we'vell talked to the administration about enrolling you on a temporary basis for now. If the project goes well, and you keep your grades up, we shouldn't have any problems setting you up as a bona fide NEST student."
+
+"They have me there. Even if I wanted to back out, that bait is just too tempting."
+"And I have to admit, I am curious about these glasses."
+
+mas "Fine. You're the boss." 
+"A growing sense of nervousness starts eating at my gut, and I ask the obvious question before I start thinking being home on my computer might be better than sticking around here." 
+mas "Why me, though? I've never so much as touched electrical engineering outside of school. If you need someone to help you work on the glasses, I'm sure someone already going to NEST could help more."
+
+"My uncle only barely manages to keep from jumping up and down in glee or impatience or maybe both."
+eva "Go on, put them on! All will be made clear."
+"Well, nothing for it. May as well take life by the horns for once."
+
+# fx(darkened_screen,start)
+# cex(eva,neutral)
+c(glasses,show)
+
+"As soon as I put them on Richard whips out a pad and starts rapidly taking notes."
+ric "How do they feel?"
+mas "Uh... like glasses, I guess. Are they supposed to be this heavy?"
+"I look around the room and try to focus on the far wall."
+mas "They're a little dark. Are they sunglasses or reading glasses?"
+ric "Professor, lights?"
+eva "Compensating!"
+
+# fx(darkened_screen,end)
+a(glasses,hide)
+
+"...wow."
+ric "How's that?"
+mas "Good. It's like they're not even there. How did you do that?"
+"Before the assistant can reply, my uncle gives another shout."
+eva "Initializing!"
+"And my eyes are full of stars."
+"No, not stars... pixels. They slowly form into a white background with a pair of glasses proudly displayed on it. Two words flash under it: 'Demo Mode.'"
+eva "Obviously, you can't see past the screen. But it's rare for the visuals to take up the whole viewing window."
+"As he speaks, the page 'retreats' into the top-left corner and I can see again. As I stare at the corner it widens again."
+
+c(eva,evans_spring_handinpocket_grin)
+
+eva "You're a natural, my boy! You've got the right idea: focusing on the minimized window will expand it."
+"I look away and after a moment it retreats."
+"This is kind of cool."
+mas "What else can they do?" 
+"I can't help but let a little excitement into my voice. It's a neat toy."
+eva "Everything you can imagine!" 
+"My uncle keeps typing away into his workstation. Richard quickly chimes in."
+
+c(eva,evans_spring_handinpocket_smile)
+
+ric "Well, right now, almost nothing. But they're built to be modular, so if you want a function we can build it in. Think of it like a smartphone with 'apps' you can download." 
+"The memory chip isn't that big, so it can only handle a few functions, and more complicated functions will drain the battery, but those features will be expanded later. We're only in the alpha stage right now."
+eva "There!" 
+"A final key press and the window pops up again to inform me that the glasses are keyed to one Mason Smith, age 18. " 
+eva "That'll keep my software free from prying eyes, unless they cut yours out!"
+"His assistant coughs and shoots my uncle a look. But all I can think is..."
+mas "So why'd you pick me?"
+"The enormity of all this, and the ease with which I fell into it, is starting to wash over me. I feel small."
+eva "Igor! You field this one. I'll be right back!"
+
+a(eva,hide)
+
+"He practically sprints out the door. 'Igor' sighs."
+mas "Isn't your name Richard?"
+ric "Yeah, but your uncle is a tad... eccentric. He bounces from point to point sometimes and it can be hard to keep up with him. He thinks of himself as a crazy inventor, so 'Igor' makes sense, you know?"
+"When I don't answer he sighs again."
+
+c(ric,richard_spring_handinpocket_frown)
+
+ric "You know, Igor. Hunchback?" 
+"When I still don't answer he throws his hands up in the air dramatically. "
+ric "Kids these days: So uncultured."
+"He shakes his head in disappointment but seems to remember my question."
+
+c(ric,richard_spring_handinpocket_smile)
+
+ric "Right, why you. Well, that's easy. Mason, what do you think the main market we'd be aiming for with these glasses is?"
+"I think for a moment or two." 
+mas "Late teens? Probably college students too?"
+"He snaps his fingers."
+ric "Exactly. Too young and they won't be able to make use of its applications, too old and they'll be too difficult to figure out. So we're looking at high school to late college age, though personally I think the range could be much bigger."
+ric "For now, though, you're smack dab in our target audience. So who better?"
+"I nod. I guess it makes sense. Richard chuckles."
+ric "I can't blame you for being a little nervous. Those glasses represent a fortune waiting to be made. Breaking or losing them would be horrendous." 
+ric "Thankfully we have good security here and as long as we always know exactly where the glasses are, they should be safe."
+
+c(eva,evans_spring_handinpocket_smile,show,left)
+
+eva "Sorry about that. How's Mason handling the glasses?"
+ric "Fine, as far as I can see. We haven't tested out any of the base features yet, but--"
+"The crackle of an intercom cuts him off. Over a tinny speaker I hear a female voice calling:"
+who "Richard Parker, please report to the main desk. Richard Parker, to the main desk."
+ric "What is it now? She always has the worst timing." 
+"He gets to the door and then turns back toward us." 
+ric "Professor Evans, I'd recommend putting him through the basic demo we set up. I'll be back as soon as possible."
+
+a(ric,hide)
+
+"My uncle just watches him go. When the door latches, he fixes his gaze on me. His smile is a little... unnerving." 
+eva "The demo, right. Of course. Mason my boy, I hope you're ready for an adventure."
+mas "What kind of adventure?"
+eva "A very important one. Now hurry, we don't have much time. Let me just explain a few things about these glasses..."
+"We go over a few of the basic functions before he ushers me out the door."
+
+a(eva,hide)
+
+a(timeskip)
+#sc(touring)
+b(evanslab_day,hide)
+b(labbuilding_day_spring,show)
+m(gb_mellow1)
+
+"Outside. Sun, school, people. I find to my appreciation that as soon as I step into the light the glasses compensate by darkening the lenses. I see a string of text pop up from the corner of my vision:"
+
+b(labbuilding_day_spring,hide)
+b(labbuilding_day_spring_message1,show)
+
+"He signed it, 'The Professor.' He told me he would be watching from his terminal, and I guess he can send messages through it as well."
+"Huh. Always watching... I wonder if I'll be able to shut that off. Will he be able to watch me in the bathroom? Right--when do I get these off, again?"
+"A new message replaces the first one before I can contemplate further." 
+
+b(labbuilding_day_spring_message1,hide)
+b(labbuilding_day_spring_message2,show)
+
+"Right. That's what he said: go outside and observe stuff, people, trees. I don't know."
+
+b(labbuilding_day_spring_message2,hide)
+b(labbuilding_day_spring_message3,show)
+
+"...Great. Of course he forgot to mention that until now. How convenient."
+
+b(labbuilding_day_spring_message3,hide)
+b(labbuilding_day_spring_message4,show)
+
+"Act normal. Right. Pretend they're not even there. Pretend I don't have an expensive, high-tech, sci-fi device feeding me my uncle's words. Easy."
+"I don't want to do this. I'm sure the glasses look stupid, I'm sure I look like a giant tool. I stop walking not ten feet outside of the labs."
+"As if sensing my unease, a new message pops up, one that sends my heart sinking." 
+
+b(labbuilding_day_spring_message4,hide)
+b(labbuilding_day_spring_message5,show)
+
+"Trapped."
+
+b(labbuilding_day_spring_message5,hide)
+b(labbuilding_day_spring,show)
+
+"And here she comes."
+
+c(mia,mia_spring_handsinjacket_smile,show)
+
+"Another message pops up: 'She's the one with red hair.' Signed 'The Professor,' again, as if I couldn't guess whom it was from."
+"Jeans and a plain hoodie. She seems so casually dressed compared to everybody else. When she reaches me, she immediately leans in so close that I can see my own reflection in the center of her eyes."
+mia "Hi, Dr. Evans!"
+mas "Uh actually I—"
+"She waves her hand in front of my face and then points to her earring. I lean back a little and try to avert my gaze anywhere but her eyes, first at the sky, then at the ground, all while trying my hardest not to stare at her chest as she uses me like a human telephone."
+
+c(mia,mia_spring_handsinjacket_serious)
+
+mia "What do you mean my hair looks nice today? My hair always looks nice!"
+mia "Okay... Okay... Really...? ...Okay... Yes... Sure... Okay... Bye... Bye... BYE!"
+
+c(mia,mia_spring_handsinjacket_smile)
+
+"Finally, she waves her hand over her ear and acknowledges me for the first time.."
+mia "Wow, you really can't notice that little camera unless you're looking for it."
+mas "I...uh... I mean..."
+mia "Oh, I'm so sorry! This must all be super new to you."
+mia "My name is Mia, and you must be...?"
+mas "My name is Ma—"
+mia "Mason! I know, I was just getting to that part!"
+mas "I'm sorry?"
+"I inadvertently give her a very puzzled look."
+mia "Oh right! I'm so sorry! This thing on my ear is something your uncle made, he calls it a 'hear-ring' or something silly like that."
+"Upon closer inspection I notice that her black earring has a peculiar shape the stretches from her lobe into the center of her ear."
+"....Although I'm still not convinced that she's just not some random crazy person."
+"College is full of crazy drug addicts. At least, that's what some of my teachers used to say."
+"Could it be possible that I'm missing my tour guide and instead I'm just here talking to some lunatic?"
+"My thoughts must have been showing on my face, because Mia's starting to look at me like I'm the crazy one."
+
+c(mia,mia_spring_handsinjacket_serious)
+
+mas "Uh... it's nothing, sorry. So is that like some sort of audible smartphone?"
+
+c(mia,mia_spring_handsinjacket_smile)
+
+mia "It's actually a device that's being sold to the blind in order to help them with everyday life."
+mia "We actually just sent a whole bunch of them to a high school in Japan for beta testing."
+mas "So... does that mean you have bad vision?"
+"I try to ask it in a friendly way, but maybe something in the way I said it was funny."
+
+c(mia,mia_spring_handsinjacket_laughing)
+
+"Mia erupts in laughter, but immediately covers her mouth with her hands."
+mia "Nope! But I still wear one, It's way better than a smartphone and even those buggy glasses that you're wearing."
+mas "Buggy glasses? They seem fine. Besides, I was told they're supposed to be the 'next big thing'."
+mia "If I had a dollar for every next big thing that Evans created I'd have..."
+"Mia thinks for a moment, like she's considering a hard math problem, then smiles.."
+"She waves her pinky over her earring and begins to speak in a monotone voice."
+mia "Console, echo, length of, 'next big thing', Professor Evans..."
+"..."
+mia "986 dollars!"
+mas "..."
+
+c(mia,mia_spring_handsinjacket_smile)
+
+mia "Now then, shall we get on with the tour? I bet you're super excited to see the campus."
+mas "Sure..."
+"I reply almost automatically with an unenthusiastic voice, but catch myself mid statement and attempt to add some enthusiasm."
+mas "I mean, yeah!"
+
+"She flashes me a half confused, half amused smile before heading off down the sidewalk, talking constantly about the local buildings, politics, and various facts about the school. I zone out for most of it."
+
+b(labbuilding_day_spring,hide)
+b(campus1_day_spring,show)
+a(timeskip)
+
+"After a fifteen minute walk towards the center of campus, I end up confronted by a giant curved building with a cylindrical sky-bridge connecting it to another building just like the first. Apparently the architect didn't like straight lines."
+mia "Mason...?"
+"She snaps her fingers, forcing my attention back to her."
+mas "Sorry, it's just... I've never seen a building like that before."
+mia "Ah yes! This is the department of Computer Sciences, and conveniently, the start of our tour!"
+"She begins to talk to me about the history of the building, but I only care enough to catch a few brief statements."
+"The rest of it seems to blur together as I'm taken back by the sight of the massive building."
+
+
+a(timeskip)
+b(campus1_day_spring,hide)
+b(building1_day_spring,show)
+
+
+mia "And the skybridge was built to represent the commitment between current mayor Aiden Macau, and former mayor Joseph Brown in their goal to..."
+"I have to pinch myself to stay awake..."
+
+
+a(timeskip)
+b(building1_day_spring,hide)
+b(libraryexterior_day_spring,show)
+
+mia "...and after you get out of those classes you can enjoy the best parts of this building. Like the park!"
+mas "A park...? The best part about a modern computer science building is the park?"
+"She looks at me funny for a second before replying in a somewhat offended tone."
+mia "It's fine if you want to spend all day indoors, but some of us like some sunshine now and then."
+"Before I have a chance to respond or apologize or something, she snaps her fingers and starts off again."
+mia "Oh! We're running low on time, and you haven't even seen the river yet!"
+"She grabs my hand, and pulls me quickly towards the side door of the building, out into a garden, and then back towards the main campus."
+"For whatever reason, maybe she got a notification from her ear thing, but she instantly shifts back into rushed tour-guide mode."
+
+b(libraryexterior_day_spring,hide)
+b(campus1_day_spring,show)
+
+a(timeskip)
+
+mia "This building hidden in the corner there is the old Lumpson building, it's due to be demolished as soon the university finds the finances for it."
+"The building appears to be an old mill, so old that it looks like it could fall apart any second. It's creepy enough on its own, but someone's slapped big red 'condemned' stickers across the doors. I can't help but get a slight shiver down my back just from looking at it."
+mia "Oh! The building right over there is the chemistry building, where...."
+"I can't seem to focus on Mia's voice. I mean, the university is like a big, expensive high school, right? There's chemistry classes, English classes, they just happen to all be in separate buildings and on a bigger campus."
+"Not to mention all the minor details she's giving me about this place. Damn, I really hope she doesn't expect me to remember any of this."
+"I let my brain rest as she drags me towards the dorms at what appears to be the end of the campus."
+"After what seems like thirty minutes of pointless walking we reach a staircase with a sign that says 'Natural Aquatics Center'."
+mia "And over here is the Merrimack river. It feeds into the the nuclear power plant we have on campus."
+mas "So this river feeds a nuclear reactor?"
+mia "Yup! Well, the reactor is one of those newly designed Advanced Recycling reactors. It can burn its own by-product as additional fuel, meaning that keeping it cool requires a lot less water, and when it gets returned to the river, the water hasn't warmed up enough to hurt the ecosystem at all."
+mia " Also, some of the water from the reactor itself gets pumped into the heating system at the school to keep it warm in the winter. I'm not sure exactly how it works, but apparently it's very safe."
+mas "A nuclear reactor with an afterburner, yea that sounds safe. So I'm guessing not many students go swimming in the river, then?"
+mia "Oh you'd be surprised. Hey, come over here."
+"She casually hops over a fence that says 'No Trespassing'."
+"I carefully follow suit and she leads me to a small rocky outcropping.."
+"Down river, I see a group of people playing what looks like Water Polo."
+mia "First off, there's no danger of radiation ever getting in the water. The water the reactor cooks stays inside. The river water is just used for cooling, so it never comes into contact with radioactive material. Even the water used for heating has no radiation in it whatsoever"
+mia "There are a lot of safeguards too, just in case. All the water gets put through a process called deradi...deradio..."
+"She struggles to pronounce the word."
+mia "de-radio-nucli..."
+"Suddenly a little gray box falls from the sky and appears just above her head."
+"The box says: Word Suggestion - Deradionuclideization." 
+mas "Where did that box come from?"
+mia "Box...?"
+"I realize immediately that the box doesn't really exist. It's somehow being projected from the glasses."
+"Struggling to read the word myself, I lean in closer to attempt to pronounce the word."
+mas "De-radio-nuclide-ization."
+"As soon as I successfully pronounce the word to the program's satisfaction, the box shifts upwards and out of sight."
+"Leaving me inches away from the face of a girl I've just met."
+mas "Whoa!"
+"I immediately take a step back, but a bunch of loose leaves shift under me and I have to step backwards again."
+"I trip and stumble, but luckily there's a big boulder between me and the river. It hurts, but at least it breaks my fall."
+
+c(mia,mia_spring_handsinjacket_serious)
+
+mia "Are you alright? Maybe we should head back, you're definitely not allowed to get hurt on my tour."
+mas "I'm fine....Blame the glasses. Or my uncle, or both--"
+
+c(mia,mia_spring_handsinjacket_laughing)
+
+"She laughs a little and I can't help but grin."
+mas "I thought I was going headfirst into the river. Is swimming normally a part of your tour?"
+mia "If you're gonna be like that, maybe next time I'll just push you in."
+mas "If you push me in; I'm pulling you in with me!"
+"We share another laugh."
+"I wonder if my uncle was watching this whole episode."
+"That thought kind of kills the moment. I stand on up and brush myself off as best I can."
+mas "Alright. Where were we?"
+
+c(mia,mia_spring_handsinjacket_smile)
+
+mia "You don't need another minute? You look a bit winded."
+mas "It's fine. There's more to see, right?"
+"She eyes me for a moment, then shrugs before hopping back over the fence and heading back toward the campus."
+
+a(timeskip)
+
+
+mia "...and that's when I started doing this tour guide gig."
+mas "Wait...do you actually get paid to do this?"
+mia "Well sorta... I actually work for your uncle... but I have a hard time sitting down and actually doing work so..."
+mia "He sends me out to do random things, and also give these tours..."
+mas "So what else do you do, I mean, when you're not giving tours."
+"I'm the smoothest man alive."
+
+#cex(mia,smirk)
+
+mia "I used to be a writer for the school newspaper, but the newspaper kept complaining that my school schedule never matched up with their production schedule."
+mas "The school paper didn't understand you had a school life, too?"
+mia "Yeah. Crazy, right? I tried to juggle both, but I guess it just.... got to be too much."
+
+c(mia,mia_spring_handsinjacket_serious)
+
+mas "I can't blame you. I've never really had a job before this...."
+"Is what I'm doing for my uncle really a job?"
+mas "I've never really had time, I mean. Between high school and... well, high school."
+mas "I'm not totally sure what my uncle has planned for me, either. Or if I'll be able to handle it."
+
+c(mia,mia_spring_handsinjacket_smile)
+
+mia "I'm sure you'll be able to do it! Dr Evans is never wrong about these things you know."
+mas "Really?"
+"She catches my disbelief and nods."
+mia "I know some of his crazy ideas don't pan out, but he can tell who's right for the job."
+mas "Yeah, maybe..."
+mia "You know, each of the lab assistants were given one of these ear things to give to a student of their choice."
+
+c(mia,mia_spring_handsinjacket_serious)
+
+mia "But four months later... and I'm the only one who hasn't committed suicide."
+
+#fx(lightning_strike)
+
+mas "..."
+mia "..."
+
+c(mia,mia_spring_handsinjacket_laughing)
+
+mia "Psh, I'm just kidding, you should've seen the look on your face. You were being all serious, so I felt like someone should break the tension."
+mia "But regardless... All I'm saying is that, Dr. Evans didn't pick you just because you were related."
+
+c(mia,mia_spring_handsinjacket_smile)
+
+
+mas "Thanks... that actually means a lot."
+mia "Don't mention it."
+mia "Oh! Let me show you where you'll be working..."
+"She pulls me along but for once she isn't chattering my ear off. Come on, Mason. Your turn to start the conversation."
+
+"I've never understood how conversation came so easily to some people. How do they always know exactly what to say in every situation? No matter what I say, I always end up second-guessing myself. I've never been completely comfortable with a sentence in my life."
+"Usually when I meet new people, I feel like I'm walking on eggshells, trying not to say anything idiotic."
+"After all, that would just mean more work for me If I have somehow apologize or make up for saying something insensitive."
+
+#cex(mia,smirk)
+
+mia "How about it, Mason?"
+mas "Huh?"
+"She stops, turns around and stands on her toes to try to look me right in the eye"
+mas "I'm sorry did you say—?"
+"She interrupts me by lifting the glasses off the brim of my nose and puts them onto her own face."
+mia "Ooooh, fancy!"
+mas "Hey um, I'm not supposed to—"
+"But it's too late, she takes off running toward the campus."
+"Wait... why is she running?"
+"Evans said definitely not to let those things out of my sight..."
+"I reluctantly take off after her."
+mas "Mia!"
+mas "What..."
+mas "...are"
+mas "you..."
+mas "...doing...!?"
+"I struggle to yell to her between breaths."
+"Eventually she stops to catch her breath. I stop beside her and have to do the same. Good thing she ran out of stamina first: I'm not sure how much longer I could keep that up."
+
+b(campus1_day_spring,hide)
+b(labbuilding_day_spring,show)
+
+"When I look up I notice that we've stopped right where we started, in front of the labs."
+"Mia pulls herself together and hands me the glasses."
+
+
+#cex(mia,smiling)
+
+mia "Here you go, Mason!"
+mas "Thanks. First swimming, now running, is there anything that isn't on this tour?"
+"She winks."
+mia "Sorry. You were still looking a little down so I figured you could use a pick-me-up."
+mia "Running is supposed to boost your endorphins or something like that!"
+mia "Personally, candy's my pick-me-up, but you don't look like a candy type of guy."
+mas "Uh...."
+"I give a vague nod."
+mia "Okay, fine. There's no fooling you. To be perfectly honest, I'm running late. I've got to bring something to the Agricultural Society as soon as possible."
+"She points to her ear, as if she had received a message."
+mas "But, why did you take my glasses?"
+mia "Oh yeah! I was just testing something. Put them on for a sec."
+"If my uncle has any qualms about me taking them off in the first place, he can review the tapes. Clear evidence I was framed."
+"Get it?"
+mas "Alright. What next?"
+mia "Show me the map!"
+"She says it in the same monotone voice she uses on her earpiece. As she says 'map' a fully-detailed map springs up in front of my eyes."
+mas "Whoa. Did you add that?"
+mia "As I was running? I'm good, but not that good. I was just making sure Evans put it on like he promised. And plus, they listened to my speech! I'm pretty sure anything I said about the campus is on there."
+mas "Great, now I'm prepared for the test."
+mia "Psh, no test. Unless you're asking for one..."
+"She grins and I quickly shake my head."
+mas "You have something to get to, right?"
+
+c(mia,mia_spring_handsinjacket_laughing)
+
+mia "Trying to get rid of me? Well, I want to make sure I show you the library. If your textbooks haven't arrived yet, you can pick up a loaner until they do. Richard told me you'll be in a  physics class, and you definitely need a textbook for that one. They have some pretty strict rules on returning them though, so don't lose it. Luckily it's on my way!"
+
+c(mia,mia_spring_handsinjacket_smile)
+
+
+a(timeskip)
+b(labbuilding_day_spring,hide)
+b(library_interior,show)
+
+mia "These first two floors are mostly reference books and--"
+mas "I think I can figure it out from here."
+mia "Right, well, I'm off then, see you around!"
+mas "Yea, you too."'
+"Thank christ that's over. Never talking to her again."
+
+a(mia,hide)
+m(gb_ambient1)
+#sc(library)
+
+"Still standing near the entrance, and trying not to make too much noise, I look around and try to find some kind of front desk or information board. Or even a map would be helpful."
+"I notice that there are a lot of students studying here for such a sunny day. My high school library would've been empty around this time. I suppose this is what college is like."
+"I never was an avid reader, but it's still impressive to see how many books are here, especially for a place like NEST which seems to pride itself on being all futuristic and technological."
+"Like the rest of the school, the books are organized immaculately. The rows of tall, metal shelving seem to go on infinitely, stretching around the walls."
+"As long as I'm here, maybe I should look for a book or two--but then again, I'm not sure they'd have anything I'd be interested in reading. It's a little embarrassing to admit, but the only things I ever really read are what I guess you'd call less serious fiction."
+"Okay, comic books. Comic books and fantasy. I doubt they have much fantasy here and I'm almost certain a college library wouldn't be caught dead with comic books. Mia mentioned I'd be taking physics, so I should see if I can get my book for class."
+
+c(jad,jade_spring_thinking_laugh,show)
+
+who "Are you going anywhere in particular, or are you just standing around?"
+
+"I quickly step out of the main path and turn to face a pale girl with jet black hair. She's holding a couple books in one hand, and fiddling with a shiny green necklace with the other. Thankfully, she doesn't look too irritated."
+
+c(jad,jade_spring_thinking_smile)
+
+mas "Sorry about that. I was just, uh, trying to figure out where to find a couple books."
+who "Oh? If it's a certain section you're looking for, I can direct you."
+
+"Shoot. Well, I better stick with that story."
+
+mas "Yeah, I was looking for..."
+who "Physics? Hmm. Oh right, I know exactly where that is, it's right next to the psychology section. Come on, I'll show you! Oh, by the way, I'm Jade."
+mas "Nice to meet you, I'm Mason."
+
+"She starts off and I follow her lead. I should say something, right?"
+
+mas "So... you're here for Psychology? I didn't know NEST had a program for that."
+
+c(jad,jade_spring_thinking_question)
+
+jad "Well... no, I study Programming. You?"
+mas "But you read a lot of psychology books? That's cool, I--"
+jad "How about you? What kind of physics are you in for?"
+
+"She cuts me off before I can finish. I guess I hit a nerve. Good going, Mason. Make the second student you've met hate you. Well, third."
+"As for what kind of physics? No kind, so far."
+
+mas "Just a physics class. I, uh, haven't picked a focus. I'm a freshman."
+
+c(jad,jade_spring_thinking_smile)
+
+"Jade nods but she doesn't say anything else. I don't really know where to take the conversation, so I shut up. Always a good plan B. Thankfully, it doesn't take us too long to reach the physics section, and I'm impressed by how big it really is."
+
+jad "I'm going to get going, nice meeting you Mason!"
+mas "You too."
+
+a(jad,hide)
+
+"A long series of metal bookshelves are stuffed with big, scary-looking tomes. Some of the rows are dusty and faded. I wonder how old some of these books are?"
+"I thumb through a couple of them but they're all named things like 'Properties of Charged Solenoids' and 'What's so Normal about Force?'"
+"Come to think of it, what's my physics course number? How am I supposed to figure out what book I need? I think about asking the front desk, but I don't even know what I would ask. The idea of starting a conversation with 'what physics class am I in?' makes my skin crawl."
+"In the end, I beat a completely undignified retreat to my uncle's lab. At least there, it's a crazy I'm used to. Luckily, the labs are only one building over, so it's not hard to find my way back."
+
+#sc(lab)
+b(library_interior,hide)
+b(hallway,show)
+m(gb_mellow2)
+
+
+"It's only been a couple of hours, but I feel like I just pulled off a hard day's work. I guess sitting on my ass for the past few months has me pretty out of shape..."
+"At least these glasses seem like they will be a big hit."
+"Have girl troubles? Never fear, the glasses will give you the right response at all times! Trouble in class? Not when you have the answers right in front of your face! Forget the next part of your speech? Don't sweat it, the glasses double as a teleprompter."
+"I'm beginning to get why this invention is such a big deal. I can hardly imagine the full scope I'll discover in the future."
+"I guess these are the right kinds of thoughts to be having when I show up at my uncle's lab. He's probably been having the same sorts of grandiose daydreams. I reach the door and knock, but no one answers. I hear what sounds like Richard's voice inside and put my ear to the door."
+
+ric "Completely... irrespons... fortune and you... foolish risk!"
+
+"I can only make out bits of what he's shouting, but I can tell it isn't good. After a second, a hush falls over the room."
+
+ric "Come in."
+
+"The door buzzes and unlatches. My uncle is at his workstation, as always, and his assistant is doing his best to tidy up a small area of the lab. Good luck."
+
+b(hallway,hide)
+b(evanslab_day,show)
+c(eva,evans_spring_handinpocket_smile,show,left)
+c(ric,richard_spring_handinpocket_smile,show,right)
+
+eva "Excellent work, Mason. That little field test went even better than I expected."
+
+c(ric,richard_spring_handinpocket_frown)
+
+"I can see Richard's mouth form a thin line."
+
+eva "I'd like to make some adjustments, however. Tomorrow some of the kinks should be ironed out."
+
+"I take off the glasses and hand them to him. I blink, adjusting to the missing weight of the invention."
+"In a way, I'd kind of already gotten used to them."
+"My uncle sets them down on his desk and starts furiously typing away. Within seconds, diagnostics have filled his screen. He starts talking without even looking up from his console."
+
+eva "I'm planning on pulling another late night. Richard, how about you show Mason to his new residency?"
+
+"That's a good point. Am I going to be staying in the dorms? Some off-campus house? Maybe with Evans?"
+
+ric "Will do, Professor." 
+"I guess I'm about to find out."
+
+a(eva,hide)
+a(ric,middle)
+c(ric,richard_spring_handinpocket_smile)
+b(evanslab_day,hide)
+b(hallway,show)
+
+"He starts walking and I follow quickly, afraid I'll be left behind if I don't hurry. By the door he stops and takes one of the keys hanging from hooks at about eye level."
+
+ric "Come on, I'll drive you to Professor Evans' apartment."
+
+"I guess that answers my question."
+
+#sc(apartment)
+a(ric,hide)
+b(hallway,hide)
+b(evansapartment_day_spring,show)
+
+"He drops me off, hands me the key and wishes me luck. Then he takes off. Not one for extended goodbyes, I guess. All he says is that he'll be back to pick me up at the crack of dawn."
+"That'd better be a joke."
+"I'm left standing in front of an apartment about half the size of my parents' house. The architect, unfortunately, seemed to have thought that concrete squares were coming back into vogue in a big way."
+"There's a little patch of lawn that looks terribly out of place and a set of mailboxes. One box is crammed so full with mail it can't close: address 212. I guess I know which room my uncle's is. I head upstairs and let myself in."
+
+b(evansapartment_day_spring,hide)
+b(dormroom_day,show)
+
+"The inside is about what I expected after seeing my uncle's laboratory. It looks like he just moved in: there are boxes everywhere in various stages of unpacking and mail strewn all over the floor."
+"There aren't that many pieces of furniture—one table, two chairs and a couch, to be precise—but they're all occupied by clutter. On impulse, I look in the fridge: it's all take-out and leftovers, captain. No life forms in sight."
+"The apartment is all one floor, five rooms: kitchen, bathroom, foyer, master bedroom and a small guest room with a simple mattress and box spring in it. I guess I should be glad I'm not going to be sleeping on boxes."
+"I'm pretty tired after the long day, so I set my backpack down in the guest room and head for the bathroom. To my surprise, I find an unopened toothbrush package with a small travel-sized tube of toothpaste: I guess my uncle isn't totally oblivious all the time."
+"Good thing, because I managed to forget to bring my own. I take a nice, long shower, unfortunately without any kind of shampoo. I'll have to pick some up tomorrow. The mattress, it turns out, is about as soft as my bed back home."
+"Sleep comes slowly, and I wake up several times throughout the night. Each time I briefly panic before remembering where I am. I tell myself I'll get used to it."
+
+#sc(riseandshine)
+m(ambient)
+
+"I wake up far earlier than any merciful God would allow, and for a moment I get really irritated. Someone's banging at the front door; why haven't my parents taken care of it yet?"
+"I remain still, faking sleep, wishing someone will make the noise go away. Just as I stuff a pillow over my head I realize the silliness of waiting for one of my parents to answer the door. Mercifully, the banging stops."
+
+ric "Hey Mason! You in there?"
+mas "Coming..."
+
+"I grumble, and manage to make it out of my bed. Just how early is it? As I change into some real clothes I sneak a peek out the window: dark and grey. I guess when Richard says 'crack of dawn' he means it."
+
+c(ric,richard_spring_handinpocket_smile,show)
+
+"When I'm finally done preparing I open the door to see a sunny-dispositioned Richard in the hallway. Guess one of us had a good night's sleep. Or... not, considering the bags under his eyes. Maybe the lab work went well: he sure looks like he has something to be happy about."
+
+ric "Hang on a sec," 
+
+"He rings the doorbell and we both listen, but there's no chime."
+ric "Thought so, you didn't break it?--no, of course you didn't. I'll have to tell the Professor to get it fixed."
+
+"When he finishes making that mental note his gaze comes back to me."
+
+ric "Well, it's good to see you're up. I was afraid I'd have to dump cold water on you or something. Don't worry, you still have a little while to get ready. I'm here early on an errand to find some tools."
+mas "For?"
+ric "The project, of course! I'll just..."
+
+c(ric,richard_spring_handinpocket_frown)
+
+"His eyes slip past me and catch sight of the stacks on stacks of boxes behind me."
+
+ric "Ah. It's gotten pretty bad in here, huh? All Evans said was 'it's in the kitchen'. I don't suppose the rest of the house is any cleaner?" 
+
+"When I shake my head no, he sighs."
+
+c(ric,richard_spring_handinpocket_smile)
+
+ric "Guess I'll do some light cleaning. Maybe they'll turn up. Come on, now: daylight's a-wasting."
+
+"I decide not to mention that the sun's barely even risen. He slips past me and I close the door, grateful for any extra time out of the cold."
+"I take a quick, warm shower, brush my teeth and get my clothes in order. When I head to the kitchen I find a bunch of neatly marked, stacked boxes and Richard, who's triumphantly brandishing a couple of magazines."
+
+mas "That's what you came here for?"
+ric "Besides you, yeah. Haven't you wondered what's in all these boxes?"
+
+"I look around. The boxes' strange labels, like 'PSY2DAY' and 'NATGEO' suddenly make much more sense."
+
+mas "Magazines? I thought he'd have, you know, actual stuff."
+
+"He points to a box labeled 'SUNDRIES'. I'm not going to ask."
+
+ric "Sure, he has some personal items but not many, and most of what he needs is at the lab anyway. One of the deals he had with the administration is for a bunch of magazine subscriptions, so his mailbox fills up fast. He says he can find inspiration in the 'most unlikely places.' So these mags--" 
+
+"He waggles the couple in his hands at me, "
+
+ric "--are for that purpose."
+
+"He coughs, looking apologetic."
+
+ric "I bet you're hungry, but we're running low on time. We can get you something at NEST."
+
+"Actually, I'm not much of a morning person, so this arrangement suits me just fine. I'm used to skipping breakfast: my stomach takes a while to wake up."
+"Richard starts taping up the boxes he'd searched through and I let my eyes trace over them. I'm impressed by how professional the stacks look. Everything is orderly and clearly marked, a far cry from the rest of the apartment. He notices my gaze."
+
+ric "Not bad, huh? I do this sort of thing for your uncle a lot, so I guess I'm getting pretty good at it. Heck, it might be the main part of my job."
+mas "Has he always been this..."
+
+"I gesture at the other rooms, searching for a word that describes this level of disorganization..."
+
+ric "Messy? Scattered?" 
+
+"He shrugs." 
+
+ric "More so than he was a year ago, but maybe it's because he's so focused on completing the glasses. Or maybe he's getting old."
+
+"I try to imagine my uncle hobbling around with a walker, but I can't quite manage."
+
+mas "I always thought he'd come up with a potion of immortality or something."
+ric "Even if he doesn't, men like him live on in their work."
+
+"Silence, broken only by the sound of tape ripping. That's enough deep talk for one day. I grab my bag and follow Richard outside to his car."
+"It feels like the world is still asleep: only a slightly lighter patch in the dark haze of clouds indicates where the rising sun is--or will be. We hop in his car, he starts the engine, and we head off."
+"Day 2 of my new life, I guess."
+
+c(ric,richard_spring_handinpocket_smile)
+b(dormroom_day,hide)
+b(evanslab_day,show)
+# sc(lab)
+m(gb_mellow2)
+
+"We arrive at the lab without making much conversation. It's nice: my brain is still waking up so the quiet is pleasant. A far cry from my parents chattering at me about the rest of my day, my plans, and so on."
+"Unsurprisingly, my uncle is already working hard. He's typing up something on his computer, chin stubbly. He waves as I come in then returns to his work."
+"Richard clears off a seat and offers it to me, then sets the magazines on a messy pile next to my uncle, who nods and continues typing away. After a moment he finishes, unplugs the glasses and hands them to Richard, who then brings them to me. It's an odd little assembly line."
+"We do the basic startup procedure: everything seems to check out just fine."
+
+ric "Alright, time's movin' right along. I believe you have some classes starting not too long from now, huh?"
+
+"...somehow, I'd kind of forgotten. Actually attending NEST seemed like a pipe dream away from the lab, away from my uncle... I'd almost fooled myself into believing it was a trick."
+
+mas "What does my schedule look like?"
+
+"It'd be just like my uncle to give me 30 different classes in one day, just to maximize the data he'd be getting, but when Richard types something up and projects a schedule onto my screen, I'm pleased to see there are only 4 classes."
+
+"So that's Physics, Programming, an hour of lunch, then History. Tomorrow is English and then a lab. A pretty wide assortment. I'm surprised when I notice how little time I'm actually going to be spending in class: this is less than half the time my high school classes took up."
+"A nice, easy ride to start off does sound like a good idea. The sort of thing that would help me ease back into school after such a long hiatus—especially if I'm coming in a few weeks after the start."
+
+ric "You already know the buildings, and the room assignments are on the schedule. Get a move on!"
+
+"So I do."
+
+a(ric,hide)
+b(dormroom_day,hide)
+b(campus1_day_spring,show)
+# sc(ericandabagail)
+m(gb_relaxing)
+
+"Thankfully I take a look at the times on my schedule before I go running into any classrooms: 'time's a wasting', by Richard's estimate, seems to mean 'you've got another half hour'."
+"I don't know where else to go, so I head out to the field and enjoy the sun. Now that the day has actually started, I can see it's turning out kind of nice. I could get used to this sort of temperature. Especially given the lab's sweltering heat."
+ 
+c(eri,erik_spring_handsonhip_smile,show)
+
+eri "Hey, Mason, watch out!"
+ 
+"Well, this is familiar."
+
+x(impact_catch_light) 
+
+"I turn to see a Frisbee whirling right towards my face. This time, without even thinking, I reach out and grab it."
+
+c(eri,erik_spring_handsonhip_grin) 
+
+eri "Nice catch, dude." 
+
+"He holds out a hand and I toss it back."
+
+c(eri,erik_spring_handsonhip_smile)  
+
+mas "Thanks." 
+
+"I do my best to pretend it wasn't pure luck." 
+
+mas "What's up?" 
+eri "What does it look like? I'm just passing the time. You?" 
+mas "Guess it's the same for me."
+ 
+"He throws it behind his back and somehow manages to arc it right to me all the same. I try to pull off the same maneuver but can't quite manage it."
+ 
+eri "So how are you acclimating?"
+mas "Huh?"
+ 
+"He tosses a slow underhand."
+ 
+eri "How's the first month going for you? Freshman, right??"
+mas "Sorta. I mean, yeah I am a Freshman, but I just got here. I, uh, transferred in." 
+
+"To my relief he doesn't ask where I'm from or how I got transferred so late or anything like that."
+
+eri "And it's going good?" 
+mas "...Yeah. Honestly, I think it is."
+eri "Glad to hear it, dude. I know NEST can be kind of a shock. Hell, the whole NTI can be rough sometimes."
+ 
+"What a nice guy. I'm about to respond when my bad toss--too far up, too much strength--comes arcing down... right into a girl's back. She stops, looks angrily at us, and comes stalking over."
+"She's wearing pretty formal clothing considering what a nice day it is. Her hands are balled into fists and maybe there's more to her but right now all I can see is the murderous expression on her face."
+"To my surprise, she goes right up to Erik, not me."
+
+a(eri,left)
+c(eri,erik_spring_handsonhip_smile)
+c(abi,abigail_spring_armhang_frown,show,right)
+ 
+eri "Hey, Abigail. Sorry about that. Didn't mean to hit you there."
+ 
+abi "When I felt something hit my back I thought 'no way, it couldn't be Erik with his stupid Frisbee. He wouldn't be that clumsy, right?'"
+ 
+"Sounds like they know each other. He looks a little resigned, like he's prepared to sit in for a long lecture. Maybe this isn't the first time it's happened."
+
+"It's tempting to avoid the conflict, but I can't just let Erik take the blame for what I did. I walk up and prepare to introduce myself, but she stops before I even manage to open my mouth."
+ 
+abi "What? One of his cronies, ready to bust him out? I know how your kind likes to stick together."
+ 
+"What is this girl's problem?"
+
+mas "No, I just met him yesterday. And I'm the one who hit you, so you should be yelling at me, not him. Sorry about that, by the way..."
+abi "What evidence do I have of that?"
+mas "It hit you from my direction?"
+
+c(abi,abigail_spring_armhang_mad) 
+
+"She just snorts."
+
+abi "Which one of you did it doesn't really matter. You're both the same: all brawn and no brains. Here on dumb sports scholarships or something so you never had to work a day in your life. Now, unlike some people I have class to attend, so that'll save you for today."
+
+a(abi,hide)
+a(eri,middle)
+
+"And with that, she just walks off."
+
+"I'm almost too confused to be mad. I can understand thinking that Erik is here because of sports, but me? I've been to the gym once or twice in my life and my experience with sports pretty much stopped before high school. Heck, Erik could probably bench-press me."
+
+eri "Sorry you had to deal with that, man,"
+mas "Abigail was her name, right?"
+eri "Yeah, that's her. She sort of has a reputation around here."
+mas "What's her problem?"
+eri "No one really knows. All I'm sure about is that she's had a chip on her shoulder since the day she came here. I know she sure doesn't like me." 
+mas "You didn't do anything to her?"
+eri "Nah, nothing. I'm pretty sure, anyway." 
+
+"He picks up the Frisbee and tosses it up and down."
+
+eri "Still up to play?"
+ 
+"It's tempting, but class is creeping up on me. I shouldn't stay any longer. Wouldn't want to be late."
+ 
+mas "Nah, man, I gotta get going. It was fun, though."
+eri "Sure, I understand. See you around, man."
+
+a(eri,hide) 
+
+"Nice guy. But if I never have to see that girl again, it'll be too soon."
+
+# sc(physics)
+
+"As it turns out, the layout is harder to get a handle on than I expected, and I only find the room as the far-off bell (from an actual bell tower: another improvement from my high school) signals the onset of the hour."
+"I walk through the door to find all of the students already seated and the teacher staring at me."
+
+b(campus1_day_spring,hide)
+b(physicsclass,show)
+c(tea,missing_male,show) 
+
+"He's got messy brown hair and a slight grin on his face. He's wearing a vest under a corduroy jacket, which I'm pretty sure is in the 'not do' section of some fashion magazine. Still, what would I know? I'm the guy wearing reading glasses when my vision's just fine."
+ "Will he notice that my glasses are a little oddly shaped? Have thicker sides? Are currently displaying some text in the corner?"
+"It occurs to me he's saying something. Maybe he has been for a while."
+
+who "I said, just who are you?"
+mas "Uh, I'm the new student."
+who "Hey, the new student. I'm Professor Timothy Gatts. Nice to meet you."
+
+"He looks like he's fishing for applause. A few of my classmates laugh, but most just stare at him like they've been personally injured by his joke. I do my best to smile."
+
+tim "Mason Smith, right?" 
+
+mas "That's me."
+tim "Excellent. Take a seat wherever. You picked a good time to drop in; we just finished our review on high school physics and pre-calculus. Everything from here on out is new ground."
+
+"Wonderful. One of the worst parts of high school was when we had to repeat stuff I'd already learned."
+
+tim "So, if you weren't paying attention in class, you're screwed!"
+
+"I try to laugh, but it just comes out as a nervous chuckle. Maybe it's better if I just sit down. I look around for an empty seat but there's only one, and it's between... oh, god."
+
+tim "Rock and a hard place, Mason. A stone'll fit right in."
+
+a(tea,hide)
+c(abi,abigail_spring_armhang_frown,show,left)
+c(mar,mari_spring_handonhip_smile,show,right)
+
+"This time I don't even bother trying to laugh. I'm trying to figure out how I'll survive trapped not only in the same class but at the same table as a very irritated-looking Abigail."
+"The lesson passes slowly. I'm doing my best to take notes but every time I look up Abigail is glaring at the girl on my opposite side."
+"The other girl seems to be cheerfully ignoring this and is instead doodling in pink and purple shades. One of her pens has a fake pink feather sticking out of the top. I haven't seen anything like it since middle school. When she notices me staring she smiles and winks, then rolls her eyes in Abigail's direction."
+"Oh savior, thy name is... whatever her name is. Not-Abigail. Nega-Abigail. Maybe this class won't be a worse fate than death."
+"The professor claps his hands, startling me back to the present. "
+
+tim "Alright, everybody! Start working! Physicsbots, roll out!" 
+
+"He pauses for laughter but no one gets the reference. Probably something from before we were born."
+"Only when the rest of the class starts talking amongst themselves do I realize we're grouped by tables. Great. Could this day get any worse?"
+"...I quickly discover it can."
+
+mar "Nice to have a boy in our group. Hi, I'm Mari!" 
+
+"I'm about to answer but Abigail gets there before I do."
+
+abi "What's THAT supposed to mean?"
+
+c(abi,abigail_spring_armhang_mad)
+c(mar,mari_spring_handonhip_laugh)
+
+mar "Some of us enjoy the presence of more than one gender, Abigail."
+
+abi "Most guys are trash, but not all of them. It'd be much better to have another girl, though. Maybe one with better morals to balance you out."
+
+"The two are firing away, barely even looking at me anymore. I feel incredibly awkward. Someone take me away. Far away."
+
+mar "And? Mason looks like a nice guy." 
+
+"She turns back to me and winks. At least I have one ally."
+
+c(abi,abigail_spring_armhang_frown)
+c(mar,mari_spring_handonhip_smile)
+
+abi "How can you say that with a straight face? Just look at what he's wearing."
+mar "Just because someone has no style in clothing doesn't mean they're bad people."
+abi "A bad person, you mean. And I'm talking about his glasses."
+
+"I freeze up. Both turn to look at me. Even if I had something to say, I'm not sure I'd be able to say it."
+
+abi "Those sorry excuses for reading glasses. Practically scream 'turbonerd.' I don't know what optometrist prescribed them, but he had a sick sense of humor."
+mar "Maybe it's his style. Don't you think you'd better get to work?"
+
+c(abi,abigail_spring_armhang_mad)
+
+"Abigail's face turns red and angry--well, angrier. I wince, expecting some sort of explosion. Instead, she just pulls out her calculator and starts furiously tearing through the assignment."
+
+mar "Sorry about that, Mason,"
+
+"Mari apologizes while patting my shoulder."
+
+mar "We'd better get down to business too. Tim is a fun guy, but even he gets angry sometimes."
+mas "Tim? Oh--the professor."
+
+"She giggles."
+
+mar "No need to be so formal. Most teachers here prefer to be called by their first name. Just don't call anyone 'Mr.' or 'Mrs.' anything. Makes it seem like we're in high school."
+mas "I'll do my best." 
+
+"We get to work on the assignment, and thankfully it's all stuff that's not too different from what I've learned. Potential energy calculations always came easy to me."
+"As if some god is watching over me, there are no more fights that class. I dread to think about being stuck in this position every day, though."
+"Damn that teacher for sticking me in the middle of them."
+
+a(abi,hide)
+a(mar,hide)
+
+"As I head out the door I realize I have no idea where my next class is. I think about turning around and asking the teacher but he seems to have a line of students waiting to talk to him. I check the schedule on my phone and it says 'Room 301', so I start walking around looking for it."
+"After about 10 minutes of fruitless searching, I finally resort to asking another student, and they direct me to a room down the hall. Class has almost certainly begun already, so I try to slink in quietly."
+
+#sc(programming)
+b(physicsclass,hide)
+b(historyclass_day,show)
+m(gb_whimsical_playful1)
+
+"The teacher notices me immediately and pulls me aside."
+
+c(tea,missing_male,show) 
+
+who "Mason Smith, I know. The rest of the class is sitting a test right now, and seeing as you're new, I'd rather you not be forced into this right now. Go ahead and sit at that empty seat next to Mr. Stringer."
+zac "Stryker. And call me Zach."
+
+"I turn around to see who this 'Zach' person is, and gasp as silently as I can muster. This room is nothing like I've ever seen before. The monitors are of a strange, curved shape, and are incredibly thin."
+"The students are all frantically typing away at the screens except for one student, leaning far too back in his chair, his head lazily resting on his outstretched hands. On his shirt is some silly-looking graphic I'm pretty sure I've seen online. I take the seat next to him and shoot a glance his way, thinking he'll get back to his work. He doesn't."
+
+a(tea,hide) 
+c(zac,zach_spring_fedoratip_smirk,show)
+
+zac "Oh, you expected me to still be working on the exam? It's really easy, honestly. Well, for me, at least."
+
+"I give him a look, but I'm not really sure if he's messing with me or just bragging. He's finished ten minutes into the class?"
+
+zac "You look surprised. Programming is first, second and third nature to me. Maybe fourth too."
+
+"I'm not quite sure that's how the idiom goes, but whatever. If he really does know his stuff, maybe being seated right next to him won't be such a bad thing. If there's anything worse than being in a group with people who don't pull their own weight, I don't know what it is."
+"Most of the class is still working, but Zach doesn't seem to have any concerns about chatting. If we're just sitting around... I may as well figure out what kind of guy he is."
+
+mas "So, uh, what sort of things do you code?"
+zac "Well, I've hacked into the administration system of schools, made programs, a few short games, just to name a few."
+
+"Now I'm almost certain he's just making stuff up."
+
+mas "Oh yeah? What sort of games??"
+zac "Some pretty complicated flash games. Most people struggle with flash, but I figured it out pretty quick."
+
+"Alright, maybe he's not lying. If he's telling the truth then that's actually really impressive."
+
+mas "Do you play games as well as make them?"
+zac "Of course. You know, in this day and age video games are the only real test of skill."
+mas "...I guess? What kinds do you play?"
+zac "Oh you know, anything and everything. FPS, MMORPG, RPG, FPSRPG, VN, MOBA, JPRPG. . Whatever offers a real challenge."
+mas "You like RPGs, huh? I get it, they're--"
+zac "RPGs are alright but coding them is easier than cake. And there are so many easy-to-fix bugs in big studio games these days--now that I know how to make them, seeing the dev teams' failures is so depressing."
+mas "Uh, fair enough, I guess? Anyway, if you have any tips I'd welcome them. I'm just starting out, but I've always thought coding games might be fun."
+zac "Giving tips? Me, helping someone? Hmm, now that's a peculiar proposal. I suppose if I found the right apprentice I might consider offloading some of my wisdom onto them. For the right fee of course."
+mas "..." 
+
+"Zach's speech and mannerisms are odd, to say the least. It's hard to tell if he's being sarcastic, charismatic or just weird. It's a little unnerving, but hopefully I'll get used to it."
+"I look up as the teacher calls my name and beckons me up to the front. Shoot."
+
+a(zac,hide)
+c(tea,missing_male,show) 
+
+mas "Sorry if we were being too loud, I thought--"
+who "It's no issue. In fact, I think you may have made Mr. Stringer a little more quiet than he usually is."
+mas "...Really?"
+who "Anyway, there's no way I can personally catch you up on all the work we've done already, but I'll give you a list of some online resources you can peruse to gain some understanding of what we're studying."
+who "I expect you'll pick this up quite quickly; after all, I understand you're Evans' nephew. I'm sure you already know what you're doing, but some revision can't hurt."
+
+"Oh great, I'm a prodigy now? He'd better not expect me to write code underwater or learn a new coding language in a day. Or... code much of anything at all. I try to smile."
+
+mas "Of course. I'll make sure to get caught up."
+
+"He hands me the scrunched-up note and I internally curse at how long it is."
+
+who "You can leave class now if you'd like. On test days you can leave whenever you finish the exam."
+"And in fact, students are beginning to file out the doors. Some of them look pleased with themselves, but not many."
+"Zach, however, is still relaxing in his seat. The teacher follows my gaze."
+who "Ah, yes. Mr. Stringer says that the lab room is 'calming.' You can stay as well if you'd like."
+mas "No, that's quite fine, thank you."
+
+"I'm pretty hungry, actually. It's a few minutes after noon: I guess I got an early lunch break. I may as well head over to the cafeteria."
+
+a(tea,hide) 
+
+#sc(erikalex)
+b(historyclass_day,hide)
+b(campus1_day_spring,show))
+m(gb_mellow1)
+
+"I dig through the map built into my uncle's glasses but I can't find the cafeteria at all. I end up realizing that Mia never actually told me where it is, and I guess my uncle didn't think it was important enough to label."
+"While I search students start pouring out of the buildings and onto the green. I watch them for a moment and realize most of them are heading in one direction."
+"Mason Stone, undergraduate Sherlock Holmes. Find me on TV at 8/9 central."
+"I figure following the herd is as good a plan as any. Thankfully, it ends up paying off."
+
+b(cafe_day,show)
+
+"I was worried there might be a problem if I just hopped in line, but this cafeteria seems to work just the same as an average high school one, albeit with a lot more variety in the food. There's even having some vegetarian, vegan and 'ethical' meals available."
+"I guess a high end college like this would be less concerned about the mundane everyday things and chose the easy route of just having something for everyone."
+"Being able to say that you have that level of choice probably makes for good PR too, give people the impression that you're a 'Progressive Institution to cater for all young minds'. "
+"I grab a burger and some fries--not very ethical or vegan, I'm afraid--but end up paying a small fortune in cash for it. Most people are swiping what look like ID cards at the kiosks, but if I'm supposed to have one my uncle certainly didn't say anything about it."
+"Not that I'm surprised."
+"I eat my food at a small table, not quite in the corner but not in the center either. Not a loner but not in the thick of things either. I pull out my phone and browse for a few minutes, but when I'm done eating it's still not time for my next class."
+"I pick at the scraps for a bit before I figure I should go find a better way to kill time. The aimless voyages of the USS Mason thus begin."
+
+b(cafe_day,hide)
+b(campus1_day_spring,show)
+
+"..."
+ 
+"'Killing time' was about right. I've just been walking along various footpaths for what feels like an hour. A glance at the time on the glasses' screen confirms it's barely been eight minutes."
+"I'm about to just give up and head to my next class early when I round a corner and a fairly large open area of grass comes into view. Looks like a baseball field, but it's not maintained well enough to be official."
+"Students must have started using the open field for games. The paths between bases have become worn down over time into dirt paths, making it more of a rectangle than a square."
+"It also seems to lack any bleachers, but its position in between two hills makes up for that. I can see a decent amount of students sitting on the grass and watching the softball game. I recognize a face among them and walk up to say 'hi'."
+ 
+c(eri,erik_spring_handsonhip_smile,show)
+
+eri "Hey Mason, come to watch the game?"
+mas "More like I just stumbled upon it, but that story works too."
+
+c(eri,erik_spring_handsonhip_grin)
+
+eri "Come on, you've gotta live life with purpose! Don't tell me you're between girls or something!"
+ 
+"He laughs as he says it. I don't see what's so funny. He playfully punches my shoulder in response to my lack of reaction."
+
+c(eri,erik_spring_handsonhip_smile) 
+
+eri "I'm just messing with you, man. Honestly I'd be surprised if you'd already settled in with a group. You don't seem like the type to make friends as soon as you start somewhere new."
+mas "Ouch. I suppose you're right, though. I'm hardly a social butterfly."
+
+"I catch myself too late; normally I keep those sorts of comments about my lack of a social life to myself, but this Erik guy must have some innate ability to make people spill their guts to him."
+
+eri "Well there's nothing wrong with that. Those sorts of friendships are always just superficial anyway. One day to form, one day to break, you know?"
+ 
+"Before I can reply, I'm cut off by a loud cheer. It's coming from a few groups in the crowd, as well as what looks to be the currently batting team on the field. I follow their gazes to the source of their uproar and see a tiny speck fly off in the air and outside the field."
+ 
+eri "Well, good game."
+mas "What do you mean?"
+eri "That was the hit they needed to win. It was a close game but there's no coming back from that point lead.."
+mas "Oh, I see..."
+ 
+"I look down onto the field and see the batting team surrounding a girl with crimson red hair, clapping her on the back or hi-fiving her. I guess she must have hit that last home run."
+"Eventually the team starts to disperse. The red-haired girl and a couple of her teammates end up walking our way."
+"Now that I can get a clear view of her I get a feeling I've seen her before, but no one comes to mind when I think about it. Can you get déjà vu with people's faces?"
+ 
+eri "What's up?"
+mas "Huh?"
+
+c(eri,erik_spring_handsonhip_grin)
+
+eri "Don't you 'huh?' me, I see you staring. You're totally checking her out."
+
+mas "Maybe, who is she?" 
+eri "Knew it. She's a freshman, like you. Alex Akerman. If you're lucky she might be in one of your classes."
+mas "That didn't tell me anything."
+
+c(eri,erik_spring_handsonhip_smile)
+
+eri "What, a name doesn't satisfy you?"
+mas "No."
+ 
+"Oddly, it doesn't. Why am I pursuing this again?"
+ 
+eri "I like it, I like it. I'll let you in on the good stuff.."
+eri "As I said, she's a freshman, but she seems to know a lot of people for someone who just started this year."
+mas "That's it? That's the 'good stuff'?"
+eri "Well, yeah. She's a hell of a softball player, but I bet you probably figured that out."
+eri "Better step carefully. She's a firecracker."
+ 
+"I don't reply to that. Alex says something to the people she's talking to before walking off on her own. She passes us as she walks up the hill, and I can see that closer up she has a well-proportioned and fairly muscular physique."
+ 
+mas "Yeah, definitely don't want to get on her bad side. If she has one."
+eri "Everyone has a bad side."
+
+"It's a somber thought. On anyone else, his expression would just be normal but compared to his constant smile, it seems a little melancholy. He sobers up quick though."
+
+eri "But yeah, she could probably beat you up if she wanted to."
+mas "No comment."
+eri "Maybe you're into that though, in which case you're in luck."
+mas "You seem to be assuming I'm already close to dating her. I just saw her for the first time, remember?"
+eri "Don't you believe in love at first sight?"
+mas "She didn't even look at me!"
+
+c(eri,erik_spring_handsonhip_grin)
+
+eri "Aww you're such a downer man. Don't worry, I'll find you another girlfriend."
+mas "I can hardly wait."
+
+c(eri,erik_spring_handsonhip_smile)
+ 
+"I check the time. I should head off if I don't want to be late."
+ 
+mas "I need to get to class, I'll talk to you later."
+eri "I was just about to say the same thing. I'll see you later, man."
+ 
+"With that we part ways and I start off in the direction I hope that my History class is in."
+a(eri,hide)
+#sc(history)
+b(campus1_day_spring,hide)
+b(physicsclass,show)
+m(gb_whimsical_playful1)
+
+"For once, the map is actually up to the task and I find the room without too much difficulty.. The door is open and a few students are entering while I approach."
+"Inside I'm surprised to see that this room, unlike the last, has tiered rows of seats, with the teacher's desk situated at the front in the lowest portion of the room. It's almost like a miniature lecture hall."
+"The professor is already inside, arranging some paperwork around a computer on the desk. He's a bit on the shorter side, and he's dressed casually for a college professor.  It's hard to tell his age; he looks like he could be anywhere between twenty-five and forty."
+"He looks more like a cool science teacher, like the kind that lets you drop mentos into coke. He glances up at the students in between shuffling papers or clicking around on his computer."
+"No one says a word to the teacher. Is that normal?"
+ 
+"I shrug and move with the flow to get seated. I opt for the back row on one of the sides, Not at the very back of the room but not face-to-face with the teacher either. It's the kind of space I occupied almost every minute of high school."
+ 
+"As I take my seat one of the students walking in catches my eye. She's changed out of her athletic outfit and her hair is no longer tied into a ponytail, but it's unmistakably the girl I just saw at the baseball game. Alex Aker-something."
+"She shoots a glance at the teacher and cocks an eyebrow, then walks my way. She picks a seat right next to me, one seat between us."
+"I realize I'm staring the second our eyes meet. I automatically look away and wince internally. Great going, Mason. She won't be creeped out by that at all..."
+ 
+"The flow of students shrinks to a trickle and then dies. The teacher goes to the door and briefly checks outside before closing it and walking back to the front. He speaks up and addresses the class in a deep but energetic voice."
+
+c(tea,missing_male,show)
+ 
+tra "Hey there guys and girls, I'm your History teacher, Professor Rhodes, but you can call me Travis if you like."
+tra "As you should all know if you've been paying attention, your previous teacher was acting as a substitute while I was on leave. I hope she did a good job introducing you to the topic while I was away."
+tra "So, I just want to get a few things out of the way before we begin. I'm sure you went through all this with the substitute and probably in your other classes too, but it's best to be thorough."
+tra "Firstly, this isn't high school. We're all adults here, and I will do my best to treat you as an equal. However, I expect to be treated the same. If you act like an ass in here, then I'll treat you like you're an ass."
+tra "Next, I get that you're at a time in your life that can be very difficult and stressful, and if you have some shit going on, you can let me know, and if you want we can talk about it, or if you prefer I can give you the notes to look over later and you can just take a break."
+ 
+"I try not to look too surprised. I could never in a million years imagine any of my high school teachers talking like that. Not that it's a bad thing: far from it. If anything, it's refreshing."
+ 
+tra "Alright, any questions? No? Great, let's get going."
+tra "Now I know your previous teacher probably did plenty of revision, but before we start on any actual work, I want to just briefly go over the main points of the topic to refresh your memories, and make sure we're all on the same page. Alright with you?"
+ 
+"Nobody says anything, so the teacher shrugs and begins going over the topic again, and I can't help feeling extremely lucky at not being left behind for once."
+
+a(tea,hide) 
+
+"..."
+ 
+"Somehow I'd managed to forget how mind-numbing lectures are. After only 20 minutes of review on The Renaissance, I'm already trying not to drift off. I shoot a glance at Alex and she looks about as bored as I am."
+"As I watch she takes out a pair of earbuds and puts one in. She starts flicking through songs on her phone and I watch the screen out of the corner of my eye. Better than staring at the wall."
+"To my surprise, as I squint a little my glasses zoom in until I can see the screen clearly. Another feature? I guess I'm not that surprised that my uncle ended up forgetting to mention it. At this point, I'd be shocked at the reverse."
+"Whatever song Alex is listening to, the album art has an old looking picture of some guy with the text 'Frédéric Chopin' above it. Classical? It feels like I remember that name from music classes in middle school. Not exactly what I expected. Is she a music major or something?"
+"..."
+"Just as the thought crosses my mind, she skips the song and the cover of what is clearly some sort of metal band's album comes up. I guess she just has varied tastes. Extremely varied tastes."
+"She turns the screen off, seemingly content with the song that came up, and my eyes wander back to the front of the room again. I sigh and try to concentrate on getting up to speed on what the class is about."
+"I'm not that worried about missing a bit here and there because I've always done pretty well in history classes, but I still shouldn't space an entire lecture.."
+ 
+"..."
+ 
+"Now that I'm actually trying to focus, I keep noticing Alex glancing over at me. I try to pay attention--he's saying something about waterwheels that's actually pretty interesting--but she keeps throwing me off."
+"Maybe she'll get bored."
+"..."
+"......"
+"........."
+"Alright, maybe she won't. I guess I'd better find out what she wants. The next time she looks over at me, I turn to face her."
+
+ c(ale,alex_spring_handonhip_smile,show)
+ 
+mas "Can I help you?"
+ale "Sorry?"
+mas "You've been staring at me for ten minutes. What do you want?"
+
+c(ale,alex_spring_handonhip_smirk)
+
+"I'm expecting embarrassment, maybe an apology or something, but she gives me a devilish grin instead."
+"I've got a bad feeling about this."
+ 
+ale "I could ask you the same thing. Interested in my music selection, are you?"
+ 
+"Now I'm the one on the spot. She noticed me looking before? Damn, she's sharp."
+ 
+ale "Well, I was just wondering if you were actually new here, or had just never bothered showing up to the lecture before."
+mas "Maybe I've been here the whole time and you just never noticed me."
+
+c(ale,alex_spring_handonhip_smile)
+
+"She assumes an obviously fake expression of deep thought. I glance over to the front of the classroom, but Travis is still lecturing away. He probably can't hear us if we keep our voices down."
+
+ale "Hmm, I suppose you do exude an aura of insignificance. Yeah, must have been that. In fact I feel like you're already turning invisible before my very eyes."
+ 
+"I sigh and give up. Even if I wanted to fire a shot back I don't know how."
+ 
+mas "I'm Mason. I transferred in recently, so I've had to start classes a little later than everyone else."
+ 
+"It's the same half-truth I've told everyone else. I may as well stick to it."
+ 
+ale "So you are new, then. I'm Alex, pleasure to meet you."
+ 
+"The professor seems to be wrapping up. I guess I'm in this for the long haul."
+ 
+mas "I see you don't take this class very seriously."
+ale "Nope. I chose History because it's a low-commitment subject. It lets me spend my time outside of college doing what I want instead of being neck deep in studying."
+mas "Like baseball?"
+ale "Yeah! Did you see the game today?"
+mas "Only the last few minutes. That was a nice home run you hit."
+ale "To be honest, that was a complete fluke. I can usually hit the ball but I got a really good swing that time."
+ale "Anyway, I'm not totally crazy about baseball but some of my friends were playing a match so I decided to join."
+ale "Don't tell anyone, but I'm not really a good college student. I'm just here because I'm having fun."
+ 
+"If she wasn't a good college student, she wouldn't be here. It makes me wonder if maybe she got in like I did--just because I happened to know somebody on the inside."
+ 
+mas "Well, I can't imagine anyone actually enjoying sitting through all these lectures and tests."
+ale "Of course not! But everyone likes hanging out with their friends. The only problem is I'm bad at starting things, so if I wasn't here I'd probably be wasting away at home until someone invited me out or my parents evicted me."
+ale "College gives me the incentive to get out and do things with people. It just comes at the cost of boring lectures and tests."
+mas "I see..."
+ 
+"I'm not totally sure I get it, but I do know what it's like to be bad at starting things. 'Probably be staying home until someone invited her out or her parents kicked her out?' Up until a few days ago, that was my life.". 
+"Before the silence between us stretches to awkward lengths Travis calls out that's all for today, signaling the end of the lesson. Alex immediately packs her things and gets ready to leave."
+
+
+ale "Well, looks like I'll be seeing you later. By the way, what subjects are you doing?"
+ 
+"I tell her my classes and the times they meet.. She seems impressed that I can rattle them off so fast, but really I'm just looking at the timetable overlay being displayed on the lenses of the glasses."
+ 
+ale "Then it seems we'll be chatting again soon."
+mas "...why is that?"
+ale "We're in the same English class tomorrow afternoon! Make sure you're not late!"
+mas "Oh, I thought I was so invisible Mr. English teacher wouldn't even notice."
+ 
+c(ale,alex_spring_handonhip_smirk)
+
+"Her smile grows fiendish once again."
+ 
+ale "Maybe not, but nonetheless 'she' won't be too happy if you're late the first lesson."
+mas "She?"
+ale "You'll see. See you later."
+ 
+"She walks away, leaving me with that ambiguous and ominous message before I can prod her further. Whatever, I wasn't exactly planning on being tardy. If anything, I should show up early. Wait, then Alex might think she scared me and get a kick out of it..."
+"Agh, whatever, why should I care. I'll get there when I get there. For now it's time to get back to the lab and see what Evans wants to do with the glasses next."
+
+a(ale,hide)
+#sc(returning)
+b(physicsclass,hide)
+b(evanslab_day,show)
+m(gb_mellow2)
+
+"When I get to the lab I'm surprised to see a third person, one who I don't recognize. Richard notices me and waves me over. The newcomer is speaking with my uncle, and neither of them seem to be paying much attention to anything else."
+
+c(ric,richard_spring_handinpocket_smile,show)
+ 
+ric "Hey folks! Got a minute?"
+
+"They don't respond immediately. It takes Richard another three tries before they finally turn to us."
+
+ric "Emily, Mason. Mason, Emily."
+
+a(ric,left)
+c(emi,missing_female,show,right)
+
+"She's brunette, tall, and long-legged. Despite her overly-formal appearance she doesn't seem put off in the slightest by the half-eaten food scattered around the lab or by the general clutter." 
+"She eyes me and nods, then continues on with the technical discussion the introduction interrupted. I guess that's sufficient."
+ 
+a(emi,hide)
+
+mas "And she is...?"
+ric "She's the official liaison, I guess you could say. The administration keeps a close eye on its researchers."
+mas "That's not you?"
+ric "Nah, I'm his assistant. I'm here of my own free will."
+mas "So she's not?"
+ 
+"He leans in close, face perfectly serious."
+
+ric "Don't tell anyone, but... she's a robo—ow."
+
+c(emi,missing_female,show,right)
+c(ric,richard_spring_handinpocket_frown)
+x(impact_hit_light)
+ 
+"Emily swats him across the back of his head."
+
+emi "An android, thank you very much." 
+ric "An android." 
+
+c(ric,richard_spring_handinpocket_smile)
+
+ric "That means you've got all working parts, right? Ow."
+
+c(ric,richard_spring_handinpocket_frown)
+x(impact_hit_light)
+ 
+"She hits him again. Before he can resume she turns to me."
+
+a(ric,hide)
+a(emi,middle)
+
+emi "Mason Smith?"
+mas "Yeah."
+emi "You don't look anything like your uncle."
+mas "Uh, is that so?" 
+
+"Brilliant response, Mason. 'A' for effort."
+
+emi "It's so. And you're testing the glasses?"
+ 
+"I point to the gadget over my eyes."
+ 
+emi "Yes, so I see. They haven't exploded on you yet?"
+mas "What?"
+emi "That's how the last piece of equipment went. Happened right over there, I recall." 
+"She points to a badly-charred desk across the room. I gulp."
+mas "These are safe, right?"
+
+a(emi,right)
+c(eva,evans_spring_handinpocket_smile,show,left)
+
+
+eva "Perfectly. Even if they did explode, I put in safeguards to prevent any major damage." 
+eva "Although, the eyes are a rather sensitive part of the body..."
+ 
+"I look back to Emily for help. Thankfully, she's smiling."
+
+a(emi,middle)
+ 
+emi "The last one blew up because Evans left it charging overnight with experimental batteries. Make sure that you don't do the same and it'll be fine, although he did fix that particular problem, didn't he?"
+ 
+"My uncle whistles and avoids her eyes, pretending to busy himself with a stack of papers. I swallow nervously. Suddenly I can't wait to get these glasses off."
+ 
+emi "Just a few questions, Mason."
+
+"She looks down at her tablet and makes a few quick motions."
+
+emi "Acclimating to school well?"
+ 
+mas "Uh, yes."
+emi "Made any friends?"
+mas "I don't know, maybe--"
+emi "Glasses working as intended?"
+mas "I think so, but I--"
+emi "Any freezes or overheating?"
+mas "No. Wait—"
+emi "All modules operational?"
+mas "Probably, but--"
+emi "That's all for now." 
+"She makes a final few marks on her screen, then replaces the cover." 
+emi "The administration is very curious to see how this invention turns out. Excuse me." 
+"Without further adieu, she turns and walks out of the room."
+
+a(emi,hide)
+c(ric,richard_spring_handinpocket_smile,show)
+ 
+ric "See? Robot."
+
+a(ric,hide)
+a(timeskip)
+
+c(ric,richard_spring_handinpocket_smile,show,left)
+c(eva,evans_spring_handinpocket_smile,show,right)
+
+ "We run through the diagnostics and everything gets a green light. My uncle seems pleased by how much I got up to today. I mention the bit about Mia and the map, and how she was wearing and using the glasses, and he brightens up instantly."
+
+eva "A bug we missed in testing! Excellent."
+ric "Great. Another long night, Thanks, Mason."
+
+"Richard rolls his eyes at me, but he doesn't look all that distraught."
+
+a(ric,hide)
+a(eva,hide)
+a(timeskip)
+#sc(natasha)
+m(gb_whimsical_playful1)
+
+"I catch myself falling asleep in my chair. When I agreed to join this 'experiment' I definitely didn't think I was going to be working so much overtime."
+"A glance at my uncle confirms that he's still working hard on... something. I asked earlier but got an unintelligible answer, and since Richard left there's no one to translate."
+"I get up and wander around the lab looking at all the junk that my uncle leaves laying around. It's like every project he's ever worked on is scattered on the floor. He spins around in his chair and gives me a pointed stare for a moment. Shit, I didn't say that out loud, right?"
+
+c(eva,evans_spring_handinpocket_smile,show)
+
+eva "I'm going to finish up this documentation and straighten up a bit. Why don't you head outside and get some fresh air? I'll meet you at the car, in say, 15 minutes."
+
+"Straighten up what? I'm pretty sure this place hasn't had so much as a vacuuming in the last decade. I can't even imagine where I'd start on cleaning up this mess."
+"Even this late, it's still really hot in here. Maybe a walk would be nice."
+
+mas "Sure, no problem..."
+
+a(eva,hide)
+
+"As I step outside a cool breeze sweeps past me, certainly a welcome feeling after being cooped up in that sweltering laball day."
+"I stand still and just enjoy the chilly outside air for a moment while I recall where he said the car was parked. It's a decent walk away, but hey, it's nice to get to stretch my legs after the day I just had."
+
+"Walking through the empty, dimly lit campus gives me a strange feeling since earlier  it was such a bustle of activity. The glass-walled buildings looked mostly light blue in the morning, but the dark sky reflecting on them now makes them look dead or asleep, or both. Maybe that's just my exhaustion talking."
+
+"The garage stands out from the rest of the campus. All the buildings on the main campus are a bit more modern, with unique designs and lots of glass, but the garage is an old brick building that would look more at home in a much smaller city."
+"The side entrances are all closed and locked, but the main drive in entrance is open and well lit, and a man sits in a small booth watching a tiny portable television. I try to avoid catching his gaze as I walk by, and thankfully he doesn't seem to notice me."
+
+"Climbing the stairs to the roof parking is exhausting, and after a flight or two the enjoyment of stretching my legs disappears. The dark concrete steps lead up several floors, but the numbers printed on the walls don't seem to make any sense. The roof appears to be floor 4 and a half, whatever that means."
+
+b(evanslab_day,hide)
+b(skyline_night_spring,show)
+
+"When I finally get to the top, I find the lot mostly empty. There are only a few cars, most of which look like they've been parked there for a decade."
+"And then there's my uncle's car, parked close to the elevator near the handicap spots. He's in one of the few spots labeled 'research lab only.' I guess that's one of the perks of the job."
+"The garage seems to be about the same height as the neighboring buildings, so as I look out over the edge most of what I can see is campus rooftops. Off in the horizon I can see what looks like a distant city, and to my left I can see the ocean in the distance."
+"Not bad for a parking garage."
+"One other thing catches my eye and makes me do a double take. Only a few feet away from my uncle's car there's a girl with long blonde hair. She's sitting on the edge of the cement barrier, facing out towards the school. Is she going to jump or something?"
+
+mas "Uh, hey, you alright?"
+
+"She turns her head slightly towards me, but her long wavy hair blocks a lot of her face so I can't get a good look. She's hurriedly taking notes in a little notebook, darting glances down at the pages."
+
+
+c(nat,natasha_spring_handonhip_surprised,show)
+
+who "Huh? Oh, yes, I'm doing fine!"
+mas "Oh. Good. So... what are you doing?"
+
+"She closes the notebook and sets it down beside her, and then replies in somewhat a nervous tone."
+
+nat "Well, ah... look up!"
+
+c(nat,natasha_spring_handonhip_smile)
+
+"To accentuate this she points straight up. We both look up in unison, but all I can see is the sky and the moon. It's nearly full, and very bright. The light gives off a bluish hue that spreads out into the sky."
+
+mas "What am I looking at, the moon?"
+
+
+"She pauses for a moment."
+
+nat "...It sure is beautiful tonight, don't you think?"
+
+"I'm not quite sure what to say. It's pretty, but it's just the moon."
+
+mas "Uh, yeah, I guess so."
+nat "It's not just the moon though, keep watching!"
+
+"She seems pretty excited, and before I know it I'm watching the sky with her. We both stare up for a minute or so, but nothing happens. Then again, I don't even know what I'm looking for."
+"Finally I realize she's not going to say anything else."
+
+mas "So... I'm not..."
+
+"As I speak, a faint spot of yellow slices through the night sky."
+
+nat "There's one, did you see it!?"
+mas "Was that a shooting star?"
+nat "A meteor! The Orionid Meteor shower is tonight! It's nearly impossible to see meteor showers this close to a big city, but these ones are especially bright!"
+mas "That's pretty cool. I don't think I've ever really seen one."
+
+"We both continue watching the sky. At some point she lays down on the cement barrier to watch. I feel like I should warn her not to fall off, but she looks so natural lying there that I don't get a sense she's in any danger."
+"Whenever I feel like I'm about to lose focus on the sky, another yellow streak goes by. It's pretty mesmerizing."
+
+mas "So, you go to school here?"
+
+
+c(nat,natasha_spring_handonhip_surprised)
+
+"She quickly sits back up, as if she'd forgotten I was here, and a slightly more serious expression crosses her face."
+
+nat "Yes. This is my second year here, how about you?"
+mas "I'm a first-year, I guess, I just... transferred in last week."
+
+"I wonder how many times you have to tell a lie before it becomes true... I didn't transfer anything, I got lucky. Incredibly lucky.." 
+"She tilts her head inquisitively, and then looks back up at the sky."
+
+nat "So if you aren't here to watch the meteors, what brings you up here?"
+mas "Got out of the labs late. I'm waiting on my uncle so I can head home."
+nat "Gotcha. Well, you picked a perfect spot to wait. This is one of the best views on campus."
+mas "You come up here often, then?"
+
+
+c(nat,natasha_spring_handonhip_smile)
+
+nat "As often as I can."
+
+"I walk over to the edge and peer out over the campus. It's fairly dark, but I can see a bright glow off in the distance. We must be closer to Boston than I thought. I turn back and notice that she's picked her notebook up and started writing in it again."
+
+nat "So, what does your uncle teach?"
+mas "Huh?"
+nat "You said you were waiting for your uncle, right? Sorry, I just imagined he was probably a teacher or something."
+mas "Oh. He's a researcher, actually."
+nat "What kind of research does he do?"
+
+"She keeps writing in her notebook as I try to pick my words carefully."
+mas "Um, he's mostly in..."
+
+c(eva,evans_spring_handinpocket_frown,show,left)
+
+eva "Hey Mason, time to go!"
+"I hear a voice yelling to me from across the parking lot--for once, my uncle shows some perfect timing."
+
+mas "Speak of the devil... I'll have to tell you about it another time. Anyway, it was nice meeting you..."
+mas "Oh right. I'm Mason by the way."
+nat "Natasha. It was nice meeting you too!"
+
+a(nat,hide)
+
+"I give a small wave and jog over to the car, where Evans is waiting impatiently. I can't blame him for being impatient. He's been cooped up in that lab for god knows how long."
+
+#sc(endingcarride)
+m(gb_ambient1)
+a(eva,middle)
+c(eva,evans_spring_handinpocket_smile)
+
+"I get into the car but before I can even reach for the seatbelt my uncle starts a conversation."
+
+eva "So, what were you two talking about?"
+
+"His question comes off in a slightly aggressive tone that takes me by surprise."
+
+mas "Huh? Oh, nothing much. We were watching a meteor shower."
+eva "You didn't tell her about the glasses, right?"
+mas "Why would I?"
+eva "Good. Make sure you don't. You may not realize it, but this project is too important to tell just anyone."
+mas "Is it really that much of a secret?"
+eva "Of course! We can't have people snooping around before it's ready. Don't take this lightly, Mason! These glasses represent the future! Not just ours, but everyone's! This is the invention that could bring about the next technological revolution!"
+
+"If he had said that before I got here, I would have told him he was crazy."
+"But now, I'm not so sure."
+"I glance out the window as we cross a bridge over the river. Through my reflection I watch another faint streak in the sky. Not just any sky: the sky right over NEST."
+
+mas "I'm not sure if I ever thanked you for..."
+"I struggle for words but end up falling short."
+mas "For... all of this."
+"It's lame, but it's all I've got."
+eva "No need to thank me, Mason--just don't waste this opportunity. Together we are going to accomplish great things. You're sitting front and center in what could be the single most influential and dare I say most inspirational..."
+
+"My uncle chatters his creation's praises and I nod or look impressed at appropriate points."
+"He'd be crazy if he expected me back down now, especially after coming this far. This is my second chance at life and I'm not going to let it go for anything."
+"My life before this point was just a nightmare I've woken up from."
+"It's only up from here."
+
+a(eva,hide)
